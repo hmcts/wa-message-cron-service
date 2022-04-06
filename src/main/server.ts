@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 import * as https from 'https';
-import {app} from './app';
-import {CaseEventHandlerService} from './services/case-event-handler-service';
-import {exit} from './utils/exit';
 
-const {Logger} = require('@hmcts/nodejs-logging');
+import { app } from './app';
+import { CaseEventHandlerService } from './services/case-event-handler-service';
+import { exit } from './utils/exit';
+
+const { Logger } = require('@hmcts/nodejs-logging');
 
 const logger = Logger.getLogger('server');
-// TODO: set the right port for your application
-// @ts-ignore
-const port: number = parseInt(process.env.PORT, 10) ||9988;
+
+const port: number = parseInt(process.env.PORT, 10) || 9988;
 
 if (app.locals.ENV === 'development') {
   const sslOptions = {};

@@ -1,4 +1,4 @@
-import Logger, {getLogLabel} from './logger';
+import Logger, { getLogLabel } from './logger';
 
 const logger: Logger = new Logger();
 const logLabel: string = getLogLabel(__filename);

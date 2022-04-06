@@ -1,9 +1,9 @@
-import axios, {AxiosResponse} from 'axios';
-import Logger, {getLogLabel} from '../utils/logger';
+import axios, { AxiosResponse } from 'axios';
 import config from 'config';
-import {exit} from '../utils/exit';
+import { authenticator } from 'otplib';
 
-import {authenticator} from 'otplib';
+import { exit } from '../utils/exit';
+import Logger, { getLogLabel } from '../utils/logger';
 
 const logger: Logger = new Logger();
 const logLabel: string = getLogLabel(__filename);
@@ -29,8 +29,8 @@ export default class S2SService implements IS2SService {
    * to be passed as a header in any outgoing calls.
    * Note: This token is stored in memory and this token is only valid for 3 hours.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async requestServiceToken(): Promise<any> {
-    
     logger.trace('Attempting to request a S2S token', logLabel);
 
     const url: string = config.get('s2s.url') + '/lease';
@@ -38,7 +38,7 @@ export default class S2SService implements IS2SService {
     const microservice: string = config.get('s2s.microserviceName');
 
     const oneTimePassword = authenticator.generate(secret);
-    const body = {microservice, oneTimePassword};
+    const body = { microservice, oneTimePassword };
 
     try {
       const response: AxiosResponse = await axios.post(url, body);
@@ -57,5 +57,4 @@ export default class S2SService implements IS2SService {
     const serviceToken = await this.requestServiceToken();
     return `Bearer ${serviceToken}`;
   }
-
 }

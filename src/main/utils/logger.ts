@@ -3,7 +3,7 @@ import chalk from 'chalk';
 enum SEVERITY {
   REQUEST = 0,
   TRACE = 1,
-  EXCEPTION = 3
+  EXCEPTION = 3,
 }
 
 interface ILogger {
@@ -14,7 +14,6 @@ interface ILogger {
 
 //eslint-disable @typescript-eslint/explicit-function-return-type
 export default class Logger implements ILogger {
-
   request(message: string, label: string): void {
     this.console(message, label, SEVERITY.REQUEST);
   }
@@ -31,13 +30,15 @@ export default class Logger implements ILogger {
     const log = `[${label}]: ${message}`;
     switch (severity) {
       case SEVERITY.REQUEST:
-        // tslint:disable:no-console
+        // eslint-disable-next-line no-console
         console.log(chalk.white(`Request: ${log}`));
         break;
       case SEVERITY.TRACE:
+        // eslint-disable-next-line no-console
         console.warn(chalk.green(`Info: ${log} `));
         break;
       case SEVERITY.EXCEPTION:
+        // eslint-disable-next-line no-console
         console.error(chalk.red(`Exception: ${log}`));
         break;
       default:
@@ -47,6 +48,6 @@ export default class Logger implements ILogger {
 }
 
 export function getLogLabel(path: string): string {
-  const paths: string[] = path?.split('\\')?.pop()?.split('/')||[];
+  const paths: string[] = path?.split('\\')?.pop()?.split('/') || [];
   return paths[paths.length - 2] + '/' + paths[paths.length - 1];
 }

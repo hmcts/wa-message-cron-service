@@ -1,9 +1,11 @@
-import axios, {AxiosInstance} from 'axios';
+import axios, { AxiosInstance } from 'axios';
 import config from 'config';
-import {JobName} from '../model/job-names';
-import Logger, {getLogLabel} from '../utils/logger';
+
+import { JobName } from '../model/job-names';
+import { exit } from '../utils/exit';
+import Logger, { getLogLabel } from '../utils/logger';
+
 import S2SService from './s2s-service';
-import {exit} from '../utils/exit';
 
 const BASE_URL: string = config.get('services.caseEventHandler.url');
 const logger: Logger = new Logger();
@@ -28,15 +30,19 @@ export class CaseEventHandlerService {
 
   private createTaskJob(job: JobName): Promise<void> {
     return s2sService.getServiceToken().then(s2sToken => {
-      const headers: any = {ServiceAuthorization: s2sToken};
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const headers: any = { ServiceAuthorization: s2sToken };
       const data = {};
-      return caseEventHandlerApi.post('/messages/jobs/' + job,data, {headers}).then(resp => {
-        logger.trace(`Status: ${resp.status}`, logLabel);
-        logger.trace(`Response: ${JSON.stringify(resp.data)}`, logLabel);
-      }).catch(err => {
-        logger.exception(err, logLabel);
-        exit(1);
-      });
+      return caseEventHandlerApi
+        .post('/messages/jobs/' + job, data, { headers })
+        .then(resp => {
+          logger.trace(`Status: ${resp.status}`, logLabel);
+          logger.trace(`Response: ${JSON.stringify(resp.data)}`, logLabel);
+        })
+        .catch(err => {
+          logger.exception(err, logLabel);
+          exit(1);
+        });
     });
   }
 }

@@ -5,5 +5,4 @@ export default function (app: Application): void {
   app.get('/', (req, res) => {
     return res.status(200).send(WELCOME_MESSAGE);
   });
-
 }
