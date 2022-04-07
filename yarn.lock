@@ -1938,12 +1938,12 @@
   resolved "https://registry.yarnpkg.com/@types/yarnpkg__lockfile/-/yarnpkg__lockfile-1.1.5.tgz#9639020e1fb65120a2f4387db8f1e8b63efdf229"
   integrity sha512-8NYnGOctzsI4W0ApsP/BIHD/LnxpJ6XaGf2AZmz4EyDYJMxtprN4279dLNI1CPZcwC9H18qYcaFv4bXi0wmokg==
 
-"@typescript-eslint/eslint-plugin-tslint@^4.28.1":
-  version "4.33.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin-tslint/-/eslint-plugin-tslint-4.33.0.tgz#c0f2a5a8a53a915d6c24983888013b7e78e75b44"
-  integrity sha512-o3ujMErtZJPgiNRETRJefo1bFNrloocOa5dMU49OW/G+Rq92IbXTY6FSF5MOwrdQK1X+VBEcA8y6PhUPWGlYqA==
+"@typescript-eslint/eslint-plugin-tslint@^5.18.0":
+  version "5.18.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin-tslint/-/eslint-plugin-tslint-5.18.0.tgz#88aa9d50226786a3a70acee9d8147b392d0033c0"
+  integrity sha512-mv8g2Pm2WtLGCdSFKbqt0EJAbyYJ/T9U60AhCtpP+2vfcCZXodgBQLwmriEg34tNFi2joBWMSZxPeoaN0wEn8w==
   dependencies:
-    "@typescript-eslint/experimental-utils" "4.33.0"
+    "@typescript-eslint/utils" "5.18.0"
     lodash "^4.17.21"
 
 "@typescript-eslint/eslint-plugin@^4.28.1":
@@ -2034,7 +2034,7 @@
     semver "^7.3.5"
     tsutils "^3.21.0"
 
-"@typescript-eslint/utils@^5.10.0":
+"@typescript-eslint/utils@5.18.0", "@typescript-eslint/utils@^5.10.0":
   version "5.18.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/utils/-/utils-5.18.0.tgz#27fc84cf95c1a96def0aae31684cb43a37e76855"
   integrity sha512-+hFGWUMMri7OFY26TsOlGa+zgjEy1ssEipxpLjtl4wSll8zy85x0GrUSju/FHdKfVorZPYJLkF3I4XPtnCTewA==
