@@ -10,6 +10,7 @@ def yarnBuilder = new uk.gov.hmcts.contino.YarnBuilder(this)
 
 withPipeline(type, product, component) {
   disableLegacyDeployment()
+  nonServiceApp()
 
   after('build') {
     yarnBuilder.yarn('build')
