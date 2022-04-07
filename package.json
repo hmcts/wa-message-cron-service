@@ -91,6 +91,6 @@
     "webpack-cli": "^4.7.2",
     "webpack-dev-middleware": "^5.0.0",
     "webpack-node-externals": "^3.0.0",
-    "yarn-audit-fix": "^6.3.4"
+    "yarn-audit-fix": "^9.2.2"
   }
 }
