@@ -1,16 +1,14 @@
 import * as path from 'path';
 
+// eslint-disable-next-line import/no-unresolved
+import { HTTPError } from 'HttpError';
 import * as bodyParser from 'body-parser';
-import config = require('config');
 import cookieParser from 'cookie-parser';
 import express from 'express';
 import { glob } from 'glob';
-import favicon from 'serve-favicon';
 
-import { HTTPError } from './HttpError';
 import { AppInsights } from './modules/appinsights';
 import { Helmet } from './modules/helmet';
-import { Nunjucks } from './modules/nunjucks';
 import { PropertiesVolume } from './modules/properties-volume';
 
 const { Logger } = require('@hmcts/nodejs-logging');
@@ -26,12 +24,9 @@ app.locals.ENV = env;
 const logger = Logger.getLogger('app');
 
 new PropertiesVolume().enableFor(app);
+new Helmet().enableFor(app);
 new AppInsights().enable();
-new Nunjucks(developmentMode).enableFor(app);
-// secure the application by adding various HTTP headers to its responses
-new Helmet(config.get('security')).enableFor(app);
 
-app.use(favicon(path.join(__dirname, '/public/assets/images/favicon.ico')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -50,7 +45,6 @@ setupDev(app, developmentMode);
 // returning "not found" page for requests with paths not resolved by the router
 app.use((req, res) => {
   res.status(404);
-  res.render('not-found');
 });
 
 // error handler
@@ -61,5 +55,4 @@ app.use((err: HTTPError, req: express.Request, res: express.Response) => {
   res.locals.message = err.message;
   res.locals.error = env === 'development' ? err : {};
   res.status(err.status || 500);
-  res.render('error');
 });

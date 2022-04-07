@@ -8,13 +8,8 @@ export class PropertiesVolume {
     if (server.locals.ENV !== 'development') {
       propertiesVolume.addTo(config);
 
-      this.setSecret('secrets.rpe.AppInsightsInstrumentationKey', 'appInsights.instrumentationKey');
-    }
-  }
-
-  private setSecret(fromPath: string, toPath: string): void {
-    if (config.has(fromPath)) {
-      set(config, toPath, get(config, fromPath));
+      set(config, 'appInsights.instrumentationKey', get(config, 'secrets.wa.AppInsightsInstrumentationKey'));
+      set(config, 's2s.secret', get(config, 'secrets.wa.s2s-secret-case-event-handler'));
     }
   }
 }

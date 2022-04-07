@@ -1,0 +1,10 @@
+s2s: 
+  microserviceName: wa_case_event_handler
+  secret: AAAAAAAAAAAAAAAA
+  url: "http://service-auth-provider-api"
+services: 
+  caseEventHandler: 
+    url: "http://localhost:8088"
+
+job: 
+  name: FIND_PROBLEM_MESSAGES  

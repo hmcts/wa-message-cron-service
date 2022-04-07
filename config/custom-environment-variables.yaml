@@ -1,0 +1,16 @@
+useCSRFProtection: "true"
+security:
+  referrerPolicy: origin
+appInsights:
+  enabled: "false"
+  instrumentationKey: "false"
+s2s:
+  microserviceName: S2S_MICROSERVICE_NAME_CASE_EVENT_HANDLER
+  secret: S2S_SECRET_CASE_EVENT_HANDLER
+  url: S2S_URL
+services:
+  taskMonitor:
+    url: WA_CASE_EVENT_HANDLER_SERVICE_URL
+job:
+  name: JOB_NAME
+
