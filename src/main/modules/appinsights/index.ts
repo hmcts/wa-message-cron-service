@@ -1,11 +1,16 @@
 import config from 'config';
 
 const appInsights = require('applicationinsights');
+const appInsightsEnabled: boolean = config.get('appInsights.enabled');
+const appInsightsKey: string = config.get('appInsights.instrumentationKey');
 
 export class AppInsights {
+
   enable(): void {
-    if (config.get('appInsights.instrumentationKey')) {
-      appInsights.setup(config.get('appInsights.instrumentationKey')).setSendLiveMetrics(true).start();
+    if (appInsightsEnabled && appInsightsEnabled === true) {
+      appInsights.setup(appInsightsKey)
+      .setSendLiveMetrics(true)
+      .start();
 
       appInsights.defaultClient.context.tags[appInsights.defaultClient.context.keys.cloudRole] =
         'wa-message-cron-service';
