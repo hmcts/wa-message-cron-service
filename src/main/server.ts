@@ -9,7 +9,7 @@ const { Logger } = require('@hmcts/nodejs-logging');
 
 const logger = Logger.getLogger('server');
 
-const port: number = parseInt(process.env.PORT, 10) || 9988;
+const port: number = parseInt(process.env.PORT!, 10) || 9988;
 
 if (app.locals.ENV === 'development') {
   const sslOptions = {};
