@@ -9,7 +9,7 @@ s2s:
   secret: S2S_SECRET_CASE_EVENT_HANDLER
   url: S2S_URL
 services:
-  taskMonitor:
+  caseEventHandler:
     url: WA_CASE_EVENT_HANDLER_SERVICE_URL
 job:
   name: JOB_NAME
