@@ -4,7 +4,7 @@
 
 def type = "nodejs"
 def product = "wa"
-def component = "task-batch-service"
+def component = "message-cron-service"
 
 def yarnBuilder = new uk.gov.hmcts.contino.YarnBuilder(this)
 
