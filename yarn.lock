@@ -5175,6 +5175,15 @@
     "minimist" "^1.2.6"
     "strip-bom" "^3.0.0"
 
+"tsconfig-paths@^4.1.1":
+  "integrity" "sha512-VgPrtLKpRgEAJsMj5Q/I/mXouC6A/7eJ/X4Nuk6o0cRPwBtznYxTCU4FodbexbzH9somBPEXYi0ZkUViUpJ21Q=="
+  "resolved" "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-4.1.1.tgz"
+  "version" "4.1.1"
+  dependencies:
+    "json5" "^2.2.1"
+    "minimist" "^1.2.6"
+    "strip-bom" "^3.0.0"
+
 "tslib@^1.13.0", "tslib@^1.8.1":
   "version" "1.14.1"
 
