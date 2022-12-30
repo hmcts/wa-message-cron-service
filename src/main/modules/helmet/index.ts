@@ -25,6 +25,7 @@ export class Helmet {
 
   private setContentSecurityPolicy(app: express.Express): void {
     app.use(
+      // eslint-disable-next-line import/no-named-as-default-member
       helmet.contentSecurityPolicy({
         directives: {
           connectSrc: [self],
@@ -44,6 +45,7 @@ export class Helmet {
       throw new Error('Referrer policy configuration is required');
     }
 
+    // eslint-disable-next-line import/no-named-as-default-member
     app.use(helmet.referrerPolicy({ policy }));
   }
 }

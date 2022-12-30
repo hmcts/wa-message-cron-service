@@ -9,6 +9,7 @@ const { Logger } = require('@hmcts/nodejs-logging');
 
 const logger = Logger.getLogger('server');
 
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const port: number = parseInt(process.env.PORT!, 10) || 9988;
 
 if (app.locals.ENV === 'development') {
