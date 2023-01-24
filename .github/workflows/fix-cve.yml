@@ -1,0 +1,26 @@
+name: Fix cve issue
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Check version of package manager
+      - run: yarn --version
+      - run: npm --version
+      - name: Check the current verison of node
+      - run: node --version
+      - name: Search dependencies and fix vulnerabilities
+      - run: npm audit
+      - run: npm audit fix
