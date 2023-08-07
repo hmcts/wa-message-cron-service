@@ -2208,12 +2208,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/fs-extra@npm:^9.0.13":
-  version: 9.0.13
-  resolution: "@types/fs-extra@npm:9.0.13"
+"@types/fs-extra@npm:^11.0.1":
+  version: 11.0.1
+  resolution: "@types/fs-extra@npm:11.0.1"
   dependencies:
+    "@types/jsonfile": "*"
     "@types/node": "*"
-  checksum: add79e212acd5ac76b97b9045834e03a7996aef60a814185e0459088fd290519a3c1620865d588fa36c4498bf614210d2a703af5cf80aa1dbc125db78f6edac3
+  checksum: 3e930346e5d84f419deb8ced1c582beef8cb20d0bd8a0eb145a37d75bab0572a1895f0e48a0d681d386b3a58b9a992b2d2acecc464bcaec2548f53ea00718651
   languageName: node
   linkType: hard
 
@@ -2294,12 +2295,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash-es@npm:^4.17.6":
-  version: 4.17.6
-  resolution: "@types/lodash-es@npm:4.17.6"
+"@types/jsonfile@npm:*":
+  version: 6.1.1
+  resolution: "@types/jsonfile@npm:6.1.1"
+  dependencies:
+    "@types/node": "*"
+  checksum: 0f8fe0a9221a00e8413cffba723dfe16553868724b830237256fb0052ecd5cac96498189d1235a001cfa815f352008261c9ceb373f0aa58227f891e0c7a12c4d
+  languageName: node
+  linkType: hard
+
+"@types/lodash-es@npm:^4.17.8":
+  version: 4.17.8
+  resolution: "@types/lodash-es@npm:4.17.8"
   dependencies:
     "@types/lodash": "*"
-  checksum: 9bd239dd525086e278821949ce12fbdd4f100a060fed9323fc7ad5661113e1641f28a7ebab617230ed3474680d8f4de705c1928b48252bb684be6ec9eed715db
+  checksum: 36356169a1862e2a1b09cde3b11b3790ab2c2e477778d70f825b216479ea93bd1a960767dbefcd00d6604312170a1b15209f0fa1c35ddf8861bc233c9b0d3e56
   languageName: node
   linkType: hard
 
@@ -2385,6 +2395,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/semver@npm:^7.5.0":
+  version: 7.5.0
+  resolution: "@types/semver@npm:7.5.0"
+  checksum: 0a64b9b9c7424d9a467658b18dd70d1d781c2d6f033096a6e05762d20ebbad23c1b69b0083b0484722aabf35640b78ccc3de26368bcae1129c87e9df028a22e2
+  languageName: node
+  linkType: hard
+
 "@types/serve-favicon@npm:^2.5.1":
   version: 2.5.3
   resolution: "@types/serve-favicon@npm:2.5.3"
@@ -2464,10 +2481,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/yarnpkg__lockfile@npm:^1.1.5":
-  version: 1.1.5
-  resolution: "@types/yarnpkg__lockfile@npm:1.1.5"
-  checksum: 2aa761eebea2e8780ddc9d2819a356451d04166e3ea4fad3fd43d81e25a68806edf884f71aef12f77f0a256eb98aa152d32a8af16e32d04a918424d10cb6d858
+"@types/yarnpkg__lockfile@npm:^1.1.6":
+  version: 1.1.6
+  resolution: "@types/yarnpkg__lockfile@npm:1.1.6"
+  checksum: c0983d88c479f7b00a66d927fda9f8972e072745d5d16922cf381807aa6e88553319bb9f2b21b58f9e1ebea1a198a22d4da3111d93c81288589371ebb00d65f5
   languageName: node
   linkType: hard
 
@@ -3690,10 +3707,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^5.0.1":
-  version: 5.2.0
-  resolution: "chalk@npm:5.2.0"
-  checksum: 03d8060277de6cf2fd567dc25fcf770593eb5bb85f460ce443e49255a30ff1242edd0c90a06a03803b0466ff0687a939b41db1757bec987113e83de89a003caa
+"chalk@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "chalk@npm:5.3.0"
+  checksum: 623922e077b7d1e9dedaea6f8b9e9352921f8ae3afe739132e0e00c275971bdd331268183b2628cf4ab1727c45ea1f28d7e24ac23ce1db1eb653c414ca8a5a80
   languageName: node
   linkType: hard
 
@@ -3883,6 +3900,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commander@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "commander@npm:10.0.1"
+  checksum: 436901d64a818295803c1996cd856621a74f30b9f9e28a588e726b2b1670665bccd7c1a77007ebf328729f0139838a88a19265858a0fa7a8728c4656796db948
+  languageName: node
+  linkType: hard
+
 "commander@npm:^2.11.0, commander@npm:^2.12.1, commander@npm:^2.20.0":
   version: 2.20.3
   resolution: "commander@npm:2.20.3"
@@ -3894,13 +3918,6 @@ __metadata:
   version: 7.2.0
   resolution: "commander@npm:7.2.0"
   checksum: 53501cbeee61d5157546c0bef0fedb6cdfc763a882136284bed9a07225f09a14b82d2a84e7637edfd1a679fb35ed9502fd58ef1d091e6287f60d790147f68ddc
-  languageName: node
-  linkType: hard
-
-"commander@npm:^9.4.0":
-  version: 9.4.1
-  resolution: "commander@npm:9.4.1"
-  checksum: bfb18e325a5bdf772763c2213d5c7d9e77144d944124e988bcd8e5e65fb6d45d5d4e86b09155d0f2556c9a59c31e428720e57968bcd050b2306e910a0bf3cf13
   languageName: node
   linkType: hard
 
@@ -4989,7 +5006,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.11, fast-glob@npm:^3.2.9":
+"fast-glob@npm:^3.2.9":
   version: 3.2.12
   resolution: "fast-glob@npm:3.2.12"
   dependencies:
@@ -4999,6 +5016,19 @@ __metadata:
     merge2: ^1.3.0
     micromatch: ^4.0.4
   checksum: 0b1990f6ce831c7e28c4d505edcdaad8e27e88ab9fa65eedadb730438cfc7cde4910d6c975d6b7b8dc8a73da4773702ebcfcd6e3518e73938bb1383badfe01c2
+  languageName: node
+  linkType: hard
+
+"fast-glob@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "fast-glob@npm:3.3.1"
+  dependencies:
+    "@nodelib/fs.stat": ^2.0.2
+    "@nodelib/fs.walk": ^1.2.3
+    glob-parent: ^5.1.2
+    merge2: ^1.3.0
+    micromatch: ^4.0.4
+  checksum: b6f3add6403e02cf3a798bfbb1183d0f6da2afd368f27456010c0bc1f9640aea308243d4cb2c0ab142f618276e65ecb8be1661d7c62a7b4e5ba774b9ce5432e5
   languageName: node
   linkType: hard
 
@@ -5215,14 +5245,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^10.1.0":
-  version: 10.1.0
-  resolution: "fs-extra@npm:10.1.0"
+"fs-extra@npm:^11.1.1":
+  version: 11.1.1
+  resolution: "fs-extra@npm:11.1.1"
   dependencies:
     graceful-fs: ^4.2.0
     jsonfile: ^6.0.1
     universalify: ^2.0.0
-  checksum: dc94ab37096f813cc3ca12f0f1b5ad6744dfed9ed21e953d72530d103cea193c2f81584a39e9dee1bea36de5ee66805678c0dddc048e8af1427ac19c00fffc50
+  checksum: fb883c68245b2d777fbc1f2082c9efb084eaa2bbf9fddaa366130d196c03608eebef7fb490541276429ee1ca99f317e2d73e96f5ca0999eefedf5a624ae1edfd
   languageName: node
   linkType: hard
 
@@ -5476,19 +5506,6 @@ __metadata:
     merge2: ^1.4.1
     slash: ^3.0.0
   checksum: b4be8885e0cfa018fc783792942d53926c35c50b3aefd3fdcfb9d22c627639dc26bd2327a40a0b74b074100ce95bb7187bfeae2f236856aa3de183af7a02aea6
-  languageName: node
-  linkType: hard
-
-"globby@npm:^13.1.2":
-  version: 13.1.3
-  resolution: "globby@npm:13.1.3"
-  dependencies:
-    dir-glob: ^3.0.1
-    fast-glob: ^3.2.11
-    ignore: ^5.2.0
-    merge2: ^1.4.1
-    slash: ^4.0.0
-  checksum: 93f06e02002cdf368f7e3d55bd59e7b00784c7cc8fe92c7ee5082cc7171ff6109fda45e1c97a80bb48bc811dedaf7843c7c9186f5f84bde4883ab630e13c43df
   languageName: node
   linkType: hard
 
@@ -8433,6 +8450,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"semver@npm:^7.5.4":
+  version: 7.5.4
+  resolution: "semver@npm:7.5.4"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: 12d8ad952fa353b0995bf180cdac205a4068b759a140e5d3c608317098b3575ac2f1e09182206bf2eb26120e1c0ed8fb92c48c592f6099680de56bb071423ca3
+  languageName: node
+  linkType: hard
+
 "semver@npm:~7.0.0":
   version: 7.0.0
   resolution: "semver@npm:7.0.0"
@@ -8628,13 +8656,6 @@ __metadata:
   version: 3.0.0
   resolution: "slash@npm:3.0.0"
   checksum: 94a93fff615f25a999ad4b83c9d5e257a7280c90a32a7cb8b4a87996e4babf322e469c42b7f649fd5796edd8687652f3fb452a86dc97a816f01113183393f11c
-  languageName: node
-  linkType: hard
-
-"slash@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "slash@npm:4.0.0"
-  checksum: da8e4af73712253acd21b7853b7e0dbba776b786e82b010a5bfc8b5051a1db38ed8aba8e1e8f400dd2c9f373be91eb1c42b66e91abb407ff42b10feece5e1d2d
   languageName: node
   linkType: hard
 
@@ -9327,7 +9348,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.2.0, tslib@npm:^2.4.0":
+"tslib@npm:^2.2.0":
   version: 2.4.1
   resolution: "tslib@npm:2.4.1"
   checksum: 19480d6e0313292bd6505d4efe096a6b31c70e21cf08b5febf4da62e95c265c8f571f7b36fcc3d1a17e068032f59c269fab3459d6cd3ed6949eafecf64315fca
@@ -9802,7 +9823,7 @@ __metadata:
     webpack-cli: ^4.7.2
     webpack-dev-middleware: ^5.0.0
     webpack-node-externals: ^3.0.0
-    yarn-audit-fix: ^9.2.4
+    yarn-audit-fix: ^10.0.0
   languageName: unknown
   linkType: soft
 
@@ -10205,31 +10226,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yarn-audit-fix@npm:^9.2.4":
-  version: 9.3.7
-  resolution: "yarn-audit-fix@npm:9.3.7"
+"yarn-audit-fix@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "yarn-audit-fix@npm:10.0.0"
   dependencies:
     "@types/find-cache-dir": ^3.2.1
-    "@types/fs-extra": ^9.0.13
-    "@types/lodash-es": ^4.17.6
-    "@types/semver": ^7.3.12
-    "@types/yarnpkg__lockfile": ^1.1.5
+    "@types/fs-extra": ^11.0.1
+    "@types/lodash-es": ^4.17.8
+    "@types/semver": ^7.5.0
+    "@types/yarnpkg__lockfile": ^1.1.6
     "@yarnpkg/lockfile": ^1.1.0
-    chalk: ^5.0.1
-    commander: ^9.4.0
+    chalk: ^5.3.0
+    commander: ^10.0.1
+    fast-glob: ^3.3.1
     find-cache-dir: ^4.0.0
     find-up: ^6.3.0
-    fs-extra: ^10.1.0
-    globby: ^13.1.2
+    fs-extra: ^11.1.1
     js-yaml: ^4.1.0
     lodash-es: ^4.17.21
     pkg-dir: ^7.0.0
-    semver: ^7.3.7
+    semver: ^7.5.4
     synp: ^1.9.10
-    tslib: ^2.4.0
   bin:
-    yarn-audit-fix: target/es6/cli.js
-  checksum: f69c2f50873e9aa8a8885e9a8a69cde3f62074d29888422e6e44f2dfca34c3e21cfe46a80867023e1e5592a73b9ba25a67b69c6f290f04812a21ab592186935e
+    yarn-audit-fix: target/esm/cli.mjs
+  checksum: 2417250117f4c1d7ee746d45ee5b528b4115620c9c3ba397cba58b07fc6d4e0db5ed588ee3a02858c7a5cdfaeacaf19bcf0ff6017280aedae9e9889e3644d844
   languageName: node
   linkType: hard
 
