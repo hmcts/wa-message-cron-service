@@ -98,5 +98,5 @@
   "resolutions": {
     "semver": "^7.5.3"
   },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.6.3"
 }
