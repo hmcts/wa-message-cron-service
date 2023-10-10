@@ -2571,10 +2571,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/config@npm:^0.0.41":
-  version: 0.0.41
-  resolution: "@types/config@npm:0.0.41"
-  checksum: 528eb5e5d60c48cf82a2b0988ee1e5e088472698ad25944131b0ba87b2e3bb0989f3b4d45edb9d49eefcc8bf158c267905c386aaec15857b9fb24be449c3f27c
+"@types/config@npm:^3.0.0":
+  version: 3.3.1
+  resolution: "@types/config@npm:3.3.1"
+  checksum: dc6604a6bb90179ea7fbe5a3de23301999dd5b115f9999f9e48db412b7c86224919bd9af8915e7ed8734bd5f729fcbcc0eb5adf37fe2422bccd98deae1063530
   languageName: node
   linkType: hard
 
@@ -3622,8 +3622,8 @@ __metadata:
   linkType: hard
 
 "applicationinsights@npm:^2.1.3":
-  version: 2.8.0
-  resolution: "applicationinsights@npm:2.8.0"
+  version: 2.9.0
+  resolution: "applicationinsights@npm:2.9.0"
   dependencies:
     "@azure/core-auth": ^1.5.0
     "@azure/core-rest-pipeline": 1.10.1
@@ -3643,7 +3643,7 @@ __metadata:
   peerDependenciesMeta:
     applicationinsights-native-metrics:
       optional: true
-  checksum: d99b2075a97824eae3e1ed9a844bc0f87028f3fbe35ffef3cc1303ff43c01c7bf22a79cfa0d27ec3ae3bdc331533e65d13c3da9c1bf5b89f5e9ff5aef2872730
+  checksum: ff044bd70355c059960c2e1d47e8a32ce4df5d0ed5338bf1399663cb251b3010c1ef96cad65d062be9b7e073fa3a2fea05b24043f996b1314cc72fba7c36836f
   languageName: node
   linkType: hard
 
@@ -4566,12 +4566,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"config@npm:3.3.7":
-  version: 3.3.7
-  resolution: "config@npm:3.3.7"
+"config@npm:3.3.9":
+  version: 3.3.9
+  resolution: "config@npm:3.3.9"
   dependencies:
-    json5: ^2.1.1
-  checksum: 53b68dbf303a262b16ee376bb8ee08a9f1f4d09ea5d35a45cd9a47a47591a0817c00d5d10f0d53328221f2a927c98ef8eb921679ad9722c80400df6839c40861
+    json5: ^2.2.3
+  checksum: 2c29e40be22274462769670a4b69fcbcad2d3049eb15030073e410d32c892ef29e0c879a3d68ef92ddd572c516e4f65a11bb6458f680a44ceb0f051bcd3d97ff
   languageName: node
   linkType: hard
 
@@ -7650,7 +7650,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json5@npm:2.x, json5@npm:^2.1.1, json5@npm:^2.2.2, json5@npm:^2.2.3":
+"json5@npm:2.x, json5@npm:^2.2.2, json5@npm:^2.2.3":
   version: 2.2.3
   resolution: "json5@npm:2.2.3"
   bin:
@@ -10789,7 +10789,7 @@ __metadata:
     "@hmcts/nodejs-logging": ^4.0.4
     "@hmcts/properties-volume": ^1.0.0
     "@types/chai-as-promised": ^7.1.1
-    "@types/config": ^0.0.41
+    "@types/config": ^3.0.0
     "@types/cookie-parser": ^1.4.2
     "@types/csurf": ^1.9.36
     "@types/es6-promisify": ^6.0.0
@@ -10812,7 +10812,7 @@ __metadata:
     chai: ^4.2.0
     chai-as-promised: ^7.1.1
     chalk: ^4.1.2
-    config: 3.3.7
+    config: 3.3.9
     cookie-parser: ^1.4.5
     csurf: ^1.11.0
     debug: ^4.1.1
