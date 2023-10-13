@@ -3,7 +3,8 @@
   "automerge": true,
   "extends": ["local>hmcts/.github:renovate-config"],
   "ignoreDeps": [
-    "chalk"
+    "chalk",
+    "node"
   ],
   "labels": ["dependencies"],
   "helm-requirements": {
