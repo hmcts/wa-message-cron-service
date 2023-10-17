@@ -4,7 +4,8 @@
   "extends": ["local>hmcts/.github:renovate-config"],
   "ignoreDeps": [
     "chalk",
-    "node"
+    "node",
+    "eslint-plugin-prettier"
   ],
   "labels": ["dependencies"],
   "helm-requirements": {
