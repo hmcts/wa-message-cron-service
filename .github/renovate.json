@@ -13,5 +13,11 @@
     "aliases": {
       "hmctspublic": "https://hmctspublic.azurecr.io/helm/v1/repo/"
     }
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["helmet"],
+      "allowedVersions": "<5.0.0"
+    }
+  ]
 }
