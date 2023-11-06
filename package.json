@@ -71,7 +71,7 @@
     "@types/webpack-dev-middleware": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^5.45.1",
     "@typescript-eslint/eslint-plugin-tslint": "^5.45.1",
-    "@typescript-eslint/parser": "^5.45.1",
+    "@typescript-eslint/parser": "^6.9.1",
     "babel-loader": "^9.0.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
