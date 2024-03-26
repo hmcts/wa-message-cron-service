@@ -47,7 +47,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^27.0.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "glob": "^10.0.0",
     "helmet": "^4.2.0",
     "ip": "^2.0.1",
