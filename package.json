@@ -102,7 +102,7 @@
     "word-wrap": "^1.2.4",
     "@babel/traverse": "^7.23.2",
     "follow-redirects": "^1.15.6",
-    "tar": "7.0.0"
+    "tar": "7.0.1"
   },
   "packageManager": "yarn@3.8.1"
 }
