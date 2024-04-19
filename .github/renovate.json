@@ -1,11 +1,23 @@
 {
-  "enabledManagers": ["helm-requirements", "nvm"],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "automerge": true,
+  "extends": ["local>hmcts/.github:renovate-config"],
+  "ignoreDeps": [
+    "chalk",
+    "node",
+    "eslint-plugin-prettier"
+  ],
   "labels": ["dependencies"],
   "helm-requirements": {
     "fileMatch": ["\\Chart.yaml$"],
     "aliases": {
       "hmctspublic": "https://hmctspublic.azurecr.io/helm/v1/repo/"
     }
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["helmet"],
+      "allowedVersions": "<5.0.0"
+    }
+  ]
 }
