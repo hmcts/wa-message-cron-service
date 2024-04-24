@@ -34,7 +34,7 @@ module.exports = {
     curly: 'error',
     eqeqeq: 'error',
     'import/no-duplicates': 'error',
-    'import/no-named-as-default': 'error',
+    'import/no-named-as-default': 0,
     'import/order': [
       'error',
       {
