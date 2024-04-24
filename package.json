@@ -46,7 +46,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^28.2.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "5.0.0",
     "express": "^4.19.2",
     "glob": "^10.3.3",
     "helmet": "^5.0.2",
