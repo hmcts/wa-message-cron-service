@@ -4698,7 +4698,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.2":
+"chalk@npm:^4.0.0, chalk@npm:^4.1.0":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -5394,9 +5394,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.746
-  resolution: "electron-to-chromium@npm:1.4.746"
-  checksum: 1fa8fad55ddf94ac8d7aa53b451ced4eec08cee0b765fe37fd70d2c560e4c4eff8bbd0ccf64bc6aa069484243c14ddda512974f770206a0b5e858b66cdd16768
+  version: 1.4.747
+  resolution: "electron-to-chromium@npm:1.4.747"
+  checksum: 6d302c2fbe71390ca666544017de5f8614ba8632ee02fd612d423439e813d72df09cbd8f614122a2ee07c8ffc2b3788882a5c5bb99363f162b9257f34c0eb31f
   languageName: node
   linkType: hard
 
@@ -6599,17 +6599,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"helmet@npm:*":
+"helmet@npm:*, helmet@npm:^7.1.0":
   version: 7.1.0
   resolution: "helmet@npm:7.1.0"
   checksum: 16aaa0df997eaa18821e71389bc9ceffeeaa935df98427ede2bb006065f7e02bb1941caabea16d5a93a791cb3fe7d8a760266bc57b3b9ca5dd7da17ea84244b8
-  languageName: node
-  linkType: hard
-
-"helmet@npm:^5.0.2":
-  version: 5.1.1
-  resolution: "helmet@npm:5.1.1"
-  checksum: b72ba26cc431804ad3b8ecdc18db95409a492cbb7a7e825efc27fc502b9433fec39fc083f2aad4fe7ed1a89a4287560b59f4435f9689eebbae6a2b61a1ec1b7d
   languageName: node
   linkType: hard
 
@@ -10919,7 +10912,7 @@ __metadata:
     babel-loader: ^9.0.0
     chai: ^5.0.0
     chai-as-promised: ^7.1.1
-    chalk: ^4.1.2
+    chalk: ^5.3.0
     config: 3.3.11
     cookie-parser: ^1.4.5
     csurf: ^1.11.0
@@ -10931,7 +10924,7 @@ __metadata:
     eslint-plugin-prettier: ^4.0.0
     express: ^4.19.2
     glob: ^10.3.3
-    helmet: ^5.0.2
+    helmet: ^7.1.0
     ip: ^2.0.1
     jest: ^29.7.0
     jquery: ^3.5.1
@@ -10955,7 +10948,7 @@ __metadata:
     tsconfig-paths: 4.2.0
     tslint: 6.1.3
     typescript: ^5.0.0
-    webpack: ^5.76.3
+    webpack: ^5.88.2
     webpack-cli: ^5.0.0
     webpack-dev-middleware: ^7.0.0
     webpack-node-externals: ^3.0.0
@@ -11058,7 +11051,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.38.1, webpack@npm:^5.76.3":
+"webpack@npm:^5.38.1, webpack@npm:^5.88.2":
   version: 5.91.0
   resolution: "webpack@npm:5.91.0"
   dependencies:
