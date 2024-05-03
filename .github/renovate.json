@@ -1,10 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "automerge": true,
   "extends": ["local>hmcts/.github:renovate-config"],
+  "schedule": "after 7am and before 11am every weekday",
+  "automergeSchedule": "after 8:00am and before 10:30am Monday to Thursday",
+  "prCreation": "not-pending",
+  "labels": ["dependencies"],
   "ignoreDeps": [
-    "chalk",
-    "node",
     "eslint-plugin-prettier"
   ],
   "labels": ["dependencies"],
@@ -16,8 +17,33 @@
   },
   "packageRules": [
     {
-      "matchPackageNames": ["helmet"],
-      "allowedVersions": "<5.0.0"
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true
+    },
+    {
+      "matchPackageNames": [
+        "helmet"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": false,
+      "groupName": "Helmet Upgrade"
+    },
+    {
+      "matchPackageNames": [
+        "chalk"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": false,
+      "groupName": "Chalk Upgrade"
     }
   ]
 }
