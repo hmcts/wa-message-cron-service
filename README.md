@@ -76,7 +76,7 @@ to be confident that it will work. You should see console output similar to the 
 
 2. Set up the following environment variables on your local wa-message-cron-service path terminal.
     export ALLOW_CONFIG_MUTATIONS=true
-    export WA_CASE_EVENT_HANDLER_SERVICE_URL=http://localhost:{CASE_EVENT_HANDLER_SERVICE_PORT_NUMBER}
+    export WA_CASE_EVENT_HANDLER_SERVICE_URL=http://localhost:{Specify the wa-case-event-handler service port number here}
     export JOB_NAME=FIND_PROBLEM_MESSAGES
 
 3. The s2s.secret is exclusively read from the config at runtime. For testing the application start-up locally to verify no issues:
