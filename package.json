@@ -22,9 +22,6 @@
     "audit": "yarn npm audit"
   },
   "dependencies": {
-    "@azure/identity": "^4.2.1",
-    "@azure/msal-node": "^2.9.2",
-    "@grpc/grpc-js": "1.10.9",
     "@hmcts/info-provider": "^1.0.0",
     "@hmcts/nodejs-healthcheck": "^1.8.0",
     "@hmcts/nodejs-logging": "^4.0.4",
@@ -42,7 +39,6 @@
     "@types/serve-favicon": "^2.5.1",
     "applicationinsights": "^3.0.0",
     "axios": "^1.2.2",
-    "braces": "^3.0.3",
     "chalk": "^4.1.2",
     "config": "3.3.11",
     "cookie-parser": "^1.4.5",
@@ -107,7 +103,11 @@
     "@babel/traverse": "^7.23.2",
     "follow-redirects": "^1.15.6",
     "tar": "7.0.1",
-    "formidable": "3.5.1"
+    "formidable": "3.5.1",
+    "@grpc/grpc-js": "^1.10.9",
+    "@azure/identity": "^4.2.1",
+    "@azure/msal-node": "^2.9.2",
+    "braces": "^3.0.3"
   },
   "packageManager": "yarn@3.8.2"
 }
