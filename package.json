@@ -22,7 +22,7 @@
     "audit": "yarn npm audit"
   },
   "dependencies": {
-    "@hmcts/info-provider": "^1.0.0",
+    "@hmcts/info-provider": "^1.2.1",
     "@hmcts/nodejs-healthcheck": "^1.8.0",
     "@hmcts/nodejs-logging": "^4.0.4",
     "@hmcts/properties-volume": "^1.0.0",
@@ -47,7 +47,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^28.2.0",
     "eslint-plugin-prettier": "5.0.0",
-    "express": "^4.19.2",
+    "express": "^4.20.0",
     "glob": "^10.3.3",
     "helmet": "^4.2.0",
     "ip": "^2.0.1",
@@ -108,7 +108,11 @@
     "@azure/identity": "^4.2.1",
     "@azure/msal-node": "^2.9.2",
     "braces": "^3.0.3",
-    "micromatch": "^4.0.8"
+    "micromatch": "^4.0.8",
+    "body-parser": "^1.20.3",
+    "serve-static": "^2.1.0",
+    "send": "^0.19.0",
+    "express": "^4.20.0"
   },
   "packageManager": "yarn@3.8.5"
 }
