@@ -39,7 +39,7 @@
     "@types/serve-favicon": "^2.5.1",
     "applicationinsights": "^3.0.0",
     "axios": "^1.7.4",
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.0",
     "config": "3.3.12",
     "cookie-parser": "^1.4.5",
     "csurf": "^1.11.0",
