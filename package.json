@@ -103,7 +103,7 @@
     "@babel/traverse": "^7.23.2",
     "follow-redirects": "^1.15.6",
     "tar": "7.4.3",
-    "formidable": "3.5.1",
+    "formidable": "3.5.2",
     "@grpc/grpc-js": "^1.10.9",
     "@azure/identity": "^4.2.1",
     "@azure/msal-node": "^2.9.2",
@@ -112,7 +112,11 @@
     "body-parser": "^1.20.3",
     "serve-static": "^2.1.0",
     "send": "^0.19.0",
-    "express": "^4.20.0"
+    "express": "^4.20.0",
+    "cookie": "^0.7.0",
+    "cross-spawn": "7.0.6",
+    "@eslint/plugin-kit": "0.2.4",
+    "path-to-regexp": "0.1.12"
   },
-  "packageManager": "yarn@4.5.0"
+  "packageManager": "yarn@4.5.3"
 }
