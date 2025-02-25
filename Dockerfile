@@ -5,10 +5,8 @@ RUN corepack enable
 USER hmcts
 
 COPY --chown=hmcts:hmcts . .
-RUN yarn install --production \
-  && yarn cache clean
-
-
+# RUN yarn install --production \
+#   && yarn cache clean
 RUN yarn config set httpProxy "$http_proxy" \
     && yarn config set httpsProxy "$https_proxy" \
     && yarn workspaces focus --all --production \
