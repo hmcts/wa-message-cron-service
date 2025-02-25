@@ -71,7 +71,7 @@ Due to the simplicity of this application, just checking that the application st
 to be confident that it will work. You should see console output similar to the below:
 
 ```
-1. Ensure wa-case-event-handler service is up. 
+1. Ensure wa-case-event-handler service is up.
     (Its dependent services also need to be up I.e. wa-workflow-api & wa-taskmanagement-service).
 
 2. Set up the following environment variables on your local wa-message-cron-service path terminal.
@@ -80,7 +80,7 @@ to be confident that it will work. You should see console output similar to the 
     export JOB_NAME=FIND_PROBLEM_MESSAGES
 
 3. The s2s.secret is exclusively read from the config at runtime. For testing the application start-up locally to verify no issues:
-    edit s2s-service.ts file & set the s2s.secret to the s2s.secret value in the dev.yaml file. 
+    edit s2s-service.ts file & set the s2s.secret to the s2s.secret value in the dev.yaml file.
 
 4. Execute the following commands and verify the startup is successful as below;
     rm -rf node_modules
@@ -96,13 +96,13 @@ to be confident that it will work. You should see console output similar to the 
     ApplicationInsights:APPINSIGHTS_INSTRUMENTATIONKEY is in path of deprecation, please use APPLICATIONINSIGHTS_CONNECTION_STRING env variable to setup the SDK. []
     2022-07-15T11:21:46+01:00 - info: [applicationRunner] Attempting to read properties from volume: '/mnt/secrets/'
     2022-07-15T11:21:46+01:00 - info: [applicationRunner] Could not find properties to load, check your config, you can ignore this if you don't expect any
-    Info: [services/case-event-handler-service.ts]: Attempting to create a job for task FIND_PROBLEM_MESSAGES 
-    Info: [services/s2s-service.ts]: Attempting to request a S2S token 
+    Info: [services/case-event-handler-service.ts]: Attempting to create a job for task FIND_PROBLEM_MESSAGES
+    Info: [services/s2s-service.ts]: Attempting to request a S2S token
     2024-05-13T10:18:59+01:00 - info: [server] Application started: http://localhost:9988
-    Info: [services/s2s-service.ts]: Received S2S token 
-    Info: [services/case-event-handler-service.ts]: Status: 200 
-    Info: [services/case-event-handler-service.ts]: Response: {"jobName":"FIND_PROBLEM_MESSAGES","numberOfMessages":0,"messageIds":[]} 
-    Info: [utils/exit.ts]: Job will now exit with code 0 
+    Info: [services/s2s-service.ts]: Received S2S token
+    Info: [services/case-event-handler-service.ts]: Status: 200
+    Info: [services/case-event-handler-service.ts]: Response: {"jobName":"FIND_PROBLEM_MESSAGES","numberOfMessages":0,"messageIds":[]}
+    Info: [utils/exit.ts]: Job will now exit with code 0
     [nodemon] clean exit - waiting for changes before restart
 
 ```
