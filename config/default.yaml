@@ -5,5 +5,10 @@
   },
   "appInsights": {
     "instrumentationKey": false
-  }
+  },
+  "services": {
+      "caseEventHandler": {
+        "url": WA_CASE_EVENT_HANDLER_SERVICE_URL
+      }
+    }
 }
