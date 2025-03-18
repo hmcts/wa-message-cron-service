@@ -39,7 +39,7 @@
     "@types/require-directory": "^2.1.1",
     "@types/serve-favicon": "^2.5.1",
     "applicationinsights": "^3.0.0",
-    "axios": "^1.7.4",
+    "axios": "^1.8.3",
     "chalk": "^4.1.2",
     "config": "3.3.12",
     "cookie-parser": "^1.4.5",
@@ -64,9 +64,9 @@
     "typescript": "^5.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/eslint-parser": "^7.11.0",
-    "@babel/preset-env": "^7.11.5",
+    "@babel/core": "^7.26.10",
+    "@babel/eslint-parser": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
     "@types/chai-as-promised": "^8.0.0",
     "@types/jest": "^29.0.0",
     "@types/supertest": "^6.0.0",
