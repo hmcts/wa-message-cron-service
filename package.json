@@ -117,8 +117,7 @@
     "cookie": "^0.7.0",
     "cross-spawn": "7.0.6",
     "@eslint/plugin-kit": "0.2.4",
-    "path-to-regexp": "0.1.12",
-    "superagent": "^10.2.0"
+    "path-to-regexp": "0.1.12"
   },
   "packageManager": "yarn@4.5.3"
 }
