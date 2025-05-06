@@ -104,7 +104,7 @@
     "@babel/traverse": "^7.23.2",
     "follow-redirects": "^1.15.6",
     "tar": "7.4.3",
-    "formidable": "3.5.2",
+    "formidable": "3.5.4",
     "@grpc/grpc-js": "^1.10.9",
     "@azure/identity": "^4.2.1",
     "@azure/msal-node": "^2.9.2",
