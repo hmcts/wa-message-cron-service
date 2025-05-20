@@ -23,6 +23,7 @@
     "audit": "yarn npm audit"
   },
   "dependencies": {
+    "@dr.pogodin/csurf": "^1.12.0",
     "@hmcts/info-provider": "^1.2.1",
     "@hmcts/nodejs-healthcheck": "^1.8.0",
     "@hmcts/nodejs-logging": "^4.0.4",
@@ -33,7 +34,6 @@
     "@types/es6-promisify": "^6.0.0",
     "@types/express": "^5.0.0",
     "@types/glob": "^8.0.1",
-    "@types/helmet": "^4.0.0",
     "@types/lodash": "^4.14.165",
     "@types/node": "^20.0.0",
     "@types/require-directory": "^2.1.1",
@@ -50,7 +50,7 @@
     "express": "^4.20.0",
     "glob": "^11.0.0",
     "helmet": "^4.2.0",
-    "ip": "^2.0.1",
+    "ip-address": "^9.0.1",
     "jquery": "^3.5.1",
     "lodash": "^4.17.20",
     "otplib": "^12.0.1",
@@ -63,9 +63,9 @@
     "typescript": "^5.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.10",
-    "@babel/eslint-parser": "^7.26.10",
-    "@babel/preset-env": "^7.26.9",
+    "@babel/core": "^7.27.0",
+    "@babel/eslint-parser": "^7.27.0",
+    "@babel/preset-env": "^7.27.0",
     "@types/chai-as-promised": "^8.0.0",
     "@types/jest": "^29.0.0",
     "@types/supertest": "^6.0.2",
