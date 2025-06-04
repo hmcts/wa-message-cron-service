@@ -81,7 +81,6 @@
     "jest": "^29.7.0",
     "nock": "^13.0.4",
     "nodemon": "^3.1.0",
-    "request": "^2.88.0",
     "sinon": "^19.0.0",
     "sinon-chai": "^4.0.0",
     "sonar-scanner": "^3.1.0",
