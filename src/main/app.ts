@@ -1,16 +1,19 @@
 import * as path from 'path';
 
 // eslint-disable-next-line import/no-unresolved
+import path from 'path';
+
+import { Logger } from '@hmcts/nodejs-logging';
 import * as bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import express from 'express';
 import { glob } from 'glob';
-import path from 'path';
+
+import { setupDev } from './development';
 import { AppInsights } from './modules/appinsights';
 import { Helmet } from './modules/helmet';
 import { PropertiesVolume } from './modules/properties-volume';
-import { Logger } from '@hmcts/nodejs-logging';
-import { setupDev } from './development';
+
 const env = process.env.NODE_ENV || 'development';
 const developmentMode = env === 'development';
 export const app = express();

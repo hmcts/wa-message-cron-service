@@ -1,6 +1,6 @@
+import appInsights from 'applicationinsights';
 import config from 'config';
 
-import appInsights from 'applicationinsights';
 const appInsightsEnabled: boolean = config.get('appInsights.enabled');
 const appInsightsKey: string = config.get('appInsights.instrumentationKey');
 

@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 import * as https from 'https';
 
+import { Logger } from '@hmcts/nodejs-logging';
+
 import { app } from './app';
 import { CaseEventHandlerService } from './services/case-event-handler-service';
 import { exit } from './utils/exit';
-
-import { Logger } from '@hmcts/nodejs-logging';
 
 const logger = Logger.getLogger('server');
 
