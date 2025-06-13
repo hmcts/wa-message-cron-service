@@ -1,8 +1,5 @@
 import * as path from 'path';
 
-// eslint-disable-next-line import/no-unresolved
-import path from 'path';
-
 import { Logger } from '@hmcts/nodejs-logging';
 import * as bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
