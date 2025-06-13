@@ -5,6 +5,8 @@ import webpackConfig from '../../webpack.config';
 
 const setupDev = (app: express.Express, developmentMode: boolean): void => {
   if (developmentMode) {
+    const webpackDev = webpackDevMiddleware;
+    const webpackconfig = webpackConfig;
     const compiler = webpack(webpackconfig);
     app.use(
       webpackDev(compiler, {

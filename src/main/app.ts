@@ -1,7 +1,6 @@
 import * as path from 'path';
 
 // eslint-disable-next-line import/no-unresolved
-import { HTTPError } from 'HttpError';
 import * as bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import express from 'express';
@@ -48,11 +47,13 @@ app.use((req, res) => {
 });
 
 // error handler
-app.use((err: HTTPError, req: express.Request, res: express.Response) => {
+// error handler
+app.use((err: Error & { status?: number }, req: express.Request, res: express.Response) => {
   logger.error(`${err.stack || err}`);
 
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = env === 'development' ? err : {};
-  res.status(err.status || 500);
+
+  res.status(err.status || 500).send('Something went wrong');
 });
