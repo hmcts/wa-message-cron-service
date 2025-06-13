@@ -10,10 +10,11 @@ import { glob } from 'glob';
 import { AppInsights } from './modules/appinsights';
 import { Helmet } from './modules/helmet';
 import { PropertiesVolume } from './modules/properties-volume';
+import require from 'require';
 
-const { Logger } = require('@hmcts/nodejs-logging');
+import { Logger } from '@hmcts/nodejs-logging';
 
-const { setupDev } = require('./development');
+import { setupDev } from './development';
 
 const env = process.env.NODE_ENV || 'development';
 const developmentMode = env === 'development';

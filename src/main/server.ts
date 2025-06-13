@@ -5,7 +5,7 @@ import { app } from './app';
 import { CaseEventHandlerService } from './services/case-event-handler-service';
 import { exit } from './utils/exit';
 
-const { Logger } = require('@hmcts/nodejs-logging');
+import { Logger } from '@hmcts/nodejs-logging';
 
 const logger = Logger.getLogger('server');
 

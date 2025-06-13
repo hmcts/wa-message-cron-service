@@ -1,10 +1,10 @@
 import * as express from 'express';
+import webpack from 'webpack';
+import webpackDevMiddleware from 'webpack-dev-middleware';
+import webpackConfig from '../../webpack.config';
 
 const setupDev = (app: express.Express, developmentMode: boolean): void => {
   if (developmentMode) {
-    const webpackDev = require('webpack-dev-middleware');
-    const webpack = require('webpack');
-    const webpackconfig = require('../../webpack.config');
     const compiler = webpack(webpackconfig);
     app.use(
       webpackDev(compiler, {
