@@ -5,6 +5,7 @@ import * as bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import express from 'express';
 import { glob } from 'glob';
+import path from 'path';
 
 import { AppInsights } from './modules/appinsights';
 import { Helmet } from './modules/helmet';
@@ -35,10 +36,14 @@ app.use((req, res, next) => {
   next();
 });
 
-glob
-  .sync(__dirname + '/routes/**/*.+(ts|js)')
-  .map(filename => require(filename))
-  .forEach(route => route.default(app));
+(async () => {
+  const files = glob.sync(path.join(__dirname, '/routes/**/*.+(ts|js)'));
+
+  for (const filename of files) {
+    const route = await import(filename);
+    route.default(app);
+  }
+})();
 
 setupDev(app, developmentMode);
 // returning "not found" page for requests with paths not resolved by the router
