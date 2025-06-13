@@ -10,7 +10,6 @@ import { glob } from 'glob';
 import { AppInsights } from './modules/appinsights';
 import { Helmet } from './modules/helmet';
 import { PropertiesVolume } from './modules/properties-volume';
-import require from 'require';
 
 import { Logger } from '@hmcts/nodejs-logging';
 
