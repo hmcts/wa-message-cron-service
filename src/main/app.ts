@@ -1,7 +1,5 @@
 import * as path from 'path';
 
-// eslint-disable-next-line import/no-unresolved
-import { HTTPError } from 'HttpError';
 import * as bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import express from 'express';
@@ -10,6 +8,8 @@ import { glob } from 'glob';
 import { AppInsights } from './modules/appinsights';
 import { Helmet } from './modules/helmet';
 import { PropertiesVolume } from './modules/properties-volume';
+
+import { HTTPError } from 'HttpError';
 
 const { Logger } = require('@hmcts/nodejs-logging');
 
