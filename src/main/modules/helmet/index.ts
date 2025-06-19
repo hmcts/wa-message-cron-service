@@ -45,9 +45,9 @@ export class Helmet {
     }
 
     app.use(
-          helmet({
-            referrerPolicy: { policy: 'no-referrer' },
-          }),
-        );
+      helmet({
+        referrerPolicy: { policy: 'no-referrer' },
+      })
+    );
   }
 }
