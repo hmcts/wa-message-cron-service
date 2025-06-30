@@ -71,7 +71,6 @@
     "@types/supertest": "^6.0.2",
     "@types/webpack-dev-middleware": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^7.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "babel-loader": "^9.0.0",
     "chai": "^5.0.0",
