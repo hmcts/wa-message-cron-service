@@ -1,6 +1,5 @@
+import healthcheck from '@hmcts/nodejs-healthcheck';
 import { Application } from 'express';
-
-const healthcheck = require('@hmcts/nodejs-healthcheck');
 
 export default function (app: Application): void {
   const healthCheckConfig = {
