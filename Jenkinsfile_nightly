@@ -15,6 +15,7 @@ def yarnBuilder = new uk.gov.hmcts.contino.YarnBuilder(this)
 
 withNightlyPipeline(type, product, component) {
   afterSuccess('build') {
+    sh "yarn test"
     yarnBuilder.yarn('build')
   }
 }

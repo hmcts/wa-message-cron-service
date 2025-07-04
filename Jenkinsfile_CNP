@@ -15,6 +15,7 @@ withPipeline(type, product, component) {
   afterSuccess('build') {
     yarnBuilder.yarn('build')
     sh "yarn test:smoke"
+    sh "yarn test"
     echo "Smoke test complete"
   }
 
