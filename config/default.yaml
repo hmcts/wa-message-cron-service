@@ -10,5 +10,13 @@
       "caseEventHandler": {
         "url": WA_CASE_EVENT_HANDLER_SERVICE_URL
       }
-    }
+    },
+  s2s: {
+    "microserviceName": S2S_MICROSERVICE_NAME_CASE_EVENT_HANDLER,
+    "secret": S2S_SECRET_CASE_EVENT_HANDLER,
+    "url": S2S_URL
+  },
+  "job": {
+    "name": "FIND_PROBLEM_MESSAGES"
+  },
 }
