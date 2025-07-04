@@ -9,7 +9,7 @@ describe('CaseEventHandlerService.createJob()', () => {
   const realExit = process.exit;
 
   beforeAll(() => {
-    process.exit = jest.fn((code?: number) => { throw 'mockExit'; });
+    process.exit = jest.fn(() => { throw 'mockExit'; });
   });
 
   afterEach(() => {
