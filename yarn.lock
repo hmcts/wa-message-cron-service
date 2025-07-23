@@ -12454,7 +12454,7 @@ __metadata:
     chalk: "npm:^4.1.2"
     config: "npm:3.3.12"
     cookie-parser: "npm:^1.4.5"
-    debug: "npm:^4.1.1"
+    debug: "npm:^4.4.1"
     eslint: "npm:9.29.0"
     eslint-config-prettier: "npm:^10.1.5"
     eslint-import-resolver-typescript: "npm:^4.4.3"
