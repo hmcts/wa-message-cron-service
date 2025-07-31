@@ -11114,14 +11114,14 @@ __metadata:
   linkType: hard
 
 "serve-static@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "serve-static@npm:2.1.0"
+  version: 2.2.0
+  resolution: "serve-static@npm:2.2.0"
   dependencies:
     encodeurl: "npm:^2.0.0"
     escape-html: "npm:^1.0.3"
     parseurl: "npm:^1.3.3"
-    send: "npm:^1.0.0"
-  checksum: 10c0/f5b36fd3a763cdb4bf367c9be2eff587c0e52685fcf9109aa28428457c4aad0f83d8b6a1bf4929488963270026f3647f2d221c898e6dbdf9f4f5b09ed0b1f51a
+    send: "npm:^1.2.0"
+  checksum: 10c0/30e2ed1dbff1984836cfd0c65abf5d3f3f83bcd696c99d2d3c97edbd4e2a3ff4d3f87108a7d713640d290a7b6fe6c15ddcbc61165ab2eaad48ea8d3b52c7f913
   languageName: node
   linkType: hard
 
