@@ -2,6 +2,7 @@ import { ChildProcess, spawn } from 'child_process';
 let serverProcess: ChildProcess;
 
 beforeAll(() => {
+  // eslint-disable-next-line no-console
   console.log('Starting the server process', process.env.NODE_ENV);
 
   serverProcess = spawn('yarn', ['start'], {
@@ -36,6 +37,7 @@ test('should check if server process is running', async () => {
   // Wait for some time to let the server start
   await new Promise(resolve => setTimeout(resolve, 30000));
 
+  // eslint-disable-next-line no-console
   console.log('Output log', output);
   expect(output).toContain('Application started');
 }, 60000);
