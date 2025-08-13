@@ -33,7 +33,7 @@
     "@types/csurf": "^1.9.36",
     "@types/es6-promisify": "^6.0.0",
     "@types/express": "^5.0.0",
-    "@types/glob": "^8.0.1",
+    "@types/glob": "^9.0.0",
     "@types/lodash": "^4.14.165",
     "@types/node": "^20.0.0",
     "@types/require-directory": "^2.1.1",
