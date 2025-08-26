@@ -41,7 +41,7 @@
     "applicationinsights": "^3.0.0",
     "axios": "^1.8.3",
     "chalk": "^4.1.2",
-    "config": "3.3.12",
+    "config": "4.1.1",
     "cookie-parser": "^1.4.5",
     "eslint-config-prettier": "^10.1.5",
     "eslint-import-resolver-typescript": "^4.4.3",
