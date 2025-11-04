@@ -17,4 +17,10 @@ withNightlyPipeline(type, product, component) {
   afterSuccess('build') {
     yarnBuilder.yarn('build')
   }
+
+  enableFortifyScan()
+
+  afterSuccess('fortify-scan') {
+    steps.archiveArtifacts allowEmptyArchive: true, artifacts: '**/Fortify Scan/**/*'
+  }
 }
