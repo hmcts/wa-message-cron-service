@@ -111,12 +111,6 @@ to be confident that it will work. You should see console output similar to the 
 
 This template app uses [Jest](https://jestjs.io//) as the test engine. You can run unit tests by executing
 the following commands:
-```
-Set up the following environment variables on your local wa-message-cron-service path terminal.
-    export S2S_URL=http://service-auth-provider-api
-    export WA_CASE_EVENT_HANDLER_SERVICE_URL=http://localhost:8088
-
-```
 
 ```bash
 $ yarn test
