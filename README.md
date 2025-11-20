@@ -110,7 +110,7 @@ to be confident that it will work. You should see console output similar to the 
 ### Unit test
 
 This template app uses [Jest](https://jestjs.io//) as the test engine. You can run unit tests by executing
-the following command:
+the following commands:
 
 ```bash
 $ yarn test
