@@ -238,6 +238,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@azure/functions-extensions-base@npm:0.2.0":
+  version: 0.2.0
+  resolution: "@azure/functions-extensions-base@npm:0.2.0"
+  checksum: 10c0/ad28de16bf39fc716ecbc79511cbdd11ff582284d3b3b2e188a6ea8bd9db5c671c21514abd5afd6dd94aa3959be39fc3356ce6766a6e0f3f1036a5039afaf444
+  languageName: node
+  linkType: hard
+
 "@azure/functions-old@npm:@azure/functions@3.5.1":
   version: 3.5.1
   resolution: "@azure/functions@npm:3.5.1"
@@ -249,14 +256,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/functions@npm:^4.6.0":
-  version: 4.7.3
-  resolution: "@azure/functions@npm:4.7.3"
+"@azure/functions@npm:^4.10.0":
+  version: 4.10.0
+  resolution: "@azure/functions@npm:4.10.0"
   dependencies:
+    "@azure/functions-extensions-base": "npm:0.2.0"
     cookie: "npm:^0.7.0"
     long: "npm:^4.0.0"
-    undici: "npm:^7.10.0"
-  checksum: 10c0/a02713bc2caa6063c5eb094a8bd847961f9d089f8787744261c02ab262b0c75b952901a022eaaf8d2043475b70363be1bad7ee960f3fc6e7bbd33fd57fbc884f
+    undici: "npm:^5.29.0"
+  checksum: 10c0/10761892786360568071cf707398592b3ecb79232dbccb2992e8a093acb3c98fb296f11999de9e8e8d3bce5b34d5fad9594dbe806e1dd03c7d15940b5bc7d843
   languageName: node
   linkType: hard
 
