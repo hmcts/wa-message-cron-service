@@ -257,14 +257,13 @@ __metadata:
   linkType: hard
 
 "@azure/functions@npm:^4.10.0":
-  version: 4.10.0
-  resolution: "@azure/functions@npm:4.10.0"
+  version: 4.11.0
+  resolution: "@azure/functions@npm:4.11.0"
   dependencies:
     "@azure/functions-extensions-base": "npm:0.2.0"
     cookie: "npm:^0.7.0"
     long: "npm:^4.0.0"
-    undici: "npm:^5.29.0"
-  checksum: 10c0/10761892786360568071cf707398592b3ecb79232dbccb2992e8a093acb3c98fb296f11999de9e8e8d3bce5b34d5fad9594dbe806e1dd03c7d15940b5bc7d843
+  checksum: 10c0/2666358f26a6fc23340922c2e3b8b7ad150290fa22ee7262141cd813d8c2e3b7193be9d2ea3601abf301373c87cac15601300ff46416e41b8b8f2d73ad0c8bdf
   languageName: node
   linkType: hard
 
@@ -2225,13 +2224,6 @@ __metadata:
     "@eslint/core": "npm:^1.0.0"
     levn: "npm:^0.4.1"
   checksum: 10c0/deb05fa08f613bf75b05ccb63f052a4cfbf36cd72271e91cb4761e20e967603c358fb3c857091967a3a4cc9496123c1e977ea5d88dcc080abdbc6029ae94fd43
-  languageName: node
-  linkType: hard
-
-"@fastify/busboy@npm:^2.0.0":
-  version: 2.1.1
-  resolution: "@fastify/busboy@npm:2.1.1"
-  checksum: 10c0/6f8027a8cba7f8f7b736718b013f5a38c0476eea67034c94a0d3c375e2b114366ad4419e6a6fa7ffc2ef9c6d3e0435d76dd584a7a1cbac23962fda7650b579e3
   languageName: node
   linkType: hard
 
@@ -12511,15 +12503,6 @@ __metadata:
   version: 7.16.0
   resolution: "undici-types@npm:7.16.0"
   checksum: 10c0/3033e2f2b5c9f1504bdc5934646cb54e37ecaca0f9249c983f7b1fc2e87c6d18399ebb05dc7fd5419e02b2e915f734d872a65da2e3eeed1813951c427d33cc9a
-  languageName: node
-  linkType: hard
-
-"undici@npm:5.29.0":
-  version: 5.29.0
-  resolution: "undici@npm:5.29.0"
-  dependencies:
-    "@fastify/busboy": "npm:^2.0.0"
-  checksum: 10c0/e4e4d631ca54ee0ad82d2e90e7798fa00a106e27e6c880687e445cc2f13b4bc87c5eba2a88c266c3eecffb18f26e227b778412da74a23acc374fca7caccec49b
   languageName: node
   linkType: hard
 
