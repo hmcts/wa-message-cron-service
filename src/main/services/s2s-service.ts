@@ -1,6 +1,9 @@
 import axios, { AxiosResponse } from 'axios';
 import config from 'config';
-import { authenticator } from 'otplib';
+const { authenticator } = require('otplib');
+
+// Note: In some environments/versions of v12+,
+// you might need to access it via .default or a specific class.
 
 import { exit } from '../utils/exit';
 import Logger, { getLogLabel } from '../utils/logger';
