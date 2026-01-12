@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
 import config from 'config';
-import { authenticator } from '@otplib/preset-default';
+import { authenticator } from 'otplib';
 
 import { exit } from '../utils/exit';
 import Logger, { getLogLabel } from '../utils/logger';
