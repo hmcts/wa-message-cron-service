@@ -106,7 +106,7 @@
     "word-wrap": "^1.2.4",
     "@babel/traverse": "^7.23.2",
     "follow-redirects": "^1.15.6",
-    "tar": "7.4.3",
+    "tar": "7.5.4",
     "formidable": "3.5.4",
     "@grpc/grpc-js": "^1.10.9",
     "@azure/identity": "^4.13.0",
