@@ -18,7 +18,7 @@ afterAll(() => {
   }
 });
 
-test('should verify server starts, gets S2S token, and calls task monitor', async () => {
+test('should verify server starts, gets S2S token, and calls case event handler', async () => {
   let output = '';
 
   if (serverProcess.stdout) {

@@ -24,8 +24,8 @@ pipelineConf.vaultSecrets = secrets
 
 onPR {
   env.S2S_URL = "http://rpe-service-auth-provider-aat.service.core-compute-aat.internal"
-  env.WA_TASK_MONITOR_SERVICE_URL = "http://wa-case-event-handler-aat.service.core-compute-aat.internal"
-  env.S2S_MICROSERVICE_NAME_TASK_MONITOR = "wa_case_event_handler"
+  env.WA_CASE_EVENT_HANDLER_SERVICE_URL = "http://wa-case-event-handler-aat.service.core-compute-aat.internal"
+  env.S2S_MICROSERVICE_NAME_CASE_EVENT_HANDLER = "wa_case_event_handler"
   env.JOB_NAME = "FIND_PROBLEM_MESSAGES"
 }
 
