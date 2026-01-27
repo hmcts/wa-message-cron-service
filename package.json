@@ -19,7 +19,7 @@
     "fortifyScan": "./test/java/gradlew -p test/java fortifyScan",
     "test:a11y": "echo 'Not needed' && exit 0",
     "test:smoke": "yarn install && jest --config=jest.smoke.config.js && exit 0",
-    "test:functional": "echo 'TODO add functional tests' && exit 1",
+    "test:functional": "yarn install && jest --config=jest.functional.config.js && exit 0",
     "cichecks": "yarn && yarn build && yarn lint && yarn test && yarn test:routes",
     "audit": "yarn npm audit"
   },
@@ -106,7 +106,7 @@
     "word-wrap": "^1.2.4",
     "@babel/traverse": "^7.23.2",
     "follow-redirects": "^1.15.6",
-    "tar": "7.4.3",
+    "tar": "^7.5.2",
     "formidable": "3.5.4",
     "@grpc/grpc-js": "^1.10.9",
     "@azure/identity": "^4.13.0",
@@ -123,13 +123,14 @@
     "@eslint/plugin-kit": "0.5.1",
     "path-to-regexp": "0.1.12",
     "brace-expansion": "4.0.1",
-    "undici": "5.29.0",
+    "undici": "7.18.2",
     "@typescript-eslint/typescript-estree": "^8.34.1",
     "superagent": "^10.2.2",
     "form-data": "^4.0.4",
     "js-yaml": "^4.1.1",
     "glob": "^12.0.0",
-    "qs": "^6.14.1"
+    "qs": "^6.14.1",
+    "diff": "^8.0.3"
   },
   "packageManager": "yarn@4.10.3"
 }
