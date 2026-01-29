@@ -43,8 +43,6 @@ withPipeline(type, product, component) {
   afterSuccess('build') {
     setupSecretsForFunctionalTests(pipelineConf)
     yarnBuilder.yarn('build')
-    sh "yarn test:smoke"
-    echo "Smoke test complete"
     yarnBuilder.yarn('test:smoke')
     yarnBuilder.yarn('test:functional')
     yarnBuilder.yarn('test:dependencies')
