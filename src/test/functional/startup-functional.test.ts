@@ -12,7 +12,7 @@ beforeAll(() => {
           },
         },
         job: {
-          "name": "FIND_PROBLEM_MESSAGES"
+          'name': 'FIND_PROBLEM_MESSAGES'
         }
       };
 
