@@ -215,9 +215,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/monitor-opentelemetry-exporter@npm:^1.0.0-beta.36":
-  version: 1.0.0-beta.36
-  resolution: "@azure/monitor-opentelemetry-exporter@npm:1.0.0-beta.36"
+"@azure/monitor-opentelemetry-exporter@npm:1.0.0-beta.38, @azure/monitor-opentelemetry-exporter@npm:^1.0.0-beta.38":
+  version: 1.0.0-beta.38
+  resolution: "@azure/monitor-opentelemetry-exporter@npm:1.0.0-beta.38"
   dependencies:
     "@azure/core-auth": "npm:^1.9.0"
     "@azure/core-client": "npm:^1.9.2"
@@ -231,19 +231,19 @@ __metadata:
     "@opentelemetry/sdk-trace-base": "npm:^2.1.0"
     "@opentelemetry/semantic-conventions": "npm:^1.37.0"
     tslib: "npm:^2.8.1"
-  checksum: 10c0/cea7af87c9e21d388bad70c99f3b8f500f8f9ec5783db9aeb8e815902d9716e6c2db140b3d5c6f392ff46a921ce7ff01a186e6885a8c0e3955c31c707b04b592
+  checksum: 10c0/dc12ca3ced1fee40a4a404582c8270e8b771b01aa0070a2b05309f1000c8e21221f777c76ee54b2114162bafc557bcbda481d578375386cd13e2c925beb2b78a
   languageName: node
   linkType: hard
 
-"@azure/monitor-opentelemetry@npm:^1.14.2":
-  version: 1.14.2
-  resolution: "@azure/monitor-opentelemetry@npm:1.14.2"
+"@azure/monitor-opentelemetry@npm:^1.15.1":
+  version: 1.15.1
+  resolution: "@azure/monitor-opentelemetry@npm:1.15.1"
   dependencies:
     "@azure/core-auth": "npm:^1.10.1"
     "@azure/core-client": "npm:^1.10.1"
     "@azure/core-rest-pipeline": "npm:^1.22.2"
     "@azure/logger": "npm:^1.3.0"
-    "@azure/monitor-opentelemetry-exporter": "npm:^1.0.0-beta.36"
+    "@azure/monitor-opentelemetry-exporter": "npm:1.0.0-beta.38"
     "@azure/opentelemetry-instrumentation-azure-sdk": "npm:^1.0.0-beta.9"
     "@microsoft/applicationinsights-web-snippet": "npm:^1.2.3"
     "@opentelemetry/api": "npm:^1.9.0"
@@ -267,7 +267,7 @@ __metadata:
     "@opentelemetry/semantic-conventions": "npm:^1.38.0"
     "@opentelemetry/winston-transport": "npm:^0.19.0"
     tslib: "npm:^2.8.1"
-  checksum: 10c0/7bc0946c6f126a07525dac04a8589874c06a630b6ac3fa8d76c2fb2212bd02c66895b064eee32df29ad96c1cf6e530586d435c2859c6b2f49fab6cc8b670109a
+  checksum: 10c0/8a250480310c7c7579055e5fbbd748b08a9e3552412210b77ae70024067c7d7c41f864dec6a7665e658b1ed7923833f06679fc74d964aa709c59b876b731bcde
   languageName: node
   linkType: hard
 
@@ -287,14 +287,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@azure/msal-common@npm:15.14.1":
+  version: 15.14.1
+  resolution: "@azure/msal-common@npm:15.14.1"
+  checksum: 10c0/0782278648609e13a67361d1c4600d0bb2c74d85b3580ff045acc19b352b206e8d021266420bce59f40d69da3789da060c03291aa3f83d31ed0569bc2c3e89bb
+  languageName: node
+  linkType: hard
+
 "@azure/msal-node@npm:^3.8.4":
-  version: 3.8.4
-  resolution: "@azure/msal-node@npm:3.8.4"
+  version: 3.8.6
+  resolution: "@azure/msal-node@npm:3.8.6"
   dependencies:
-    "@azure/msal-common": "npm:15.13.3"
+    "@azure/msal-common": "npm:15.14.1"
     jsonwebtoken: "npm:^9.0.0"
     uuid: "npm:^8.3.0"
-  checksum: 10c0/8f61c2172c31cae156c42ada15bd7795ce7ef2b12c33e2c2e4e5802678596c53985f560cb40a93647064f1866d643f75c62699130121aa368ef9b69b87e5f071
+  checksum: 10c0/09360434bfdce269299369c66b06c93954308d4e09dc78668908a0eddc384f24f216afc806f66fe6f4cc64661222928aefca8d5a49c595378fde4f4e601b0ad7
   languageName: node
   linkType: hard
 
@@ -1686,10 +1693,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.28.4":
-  version: 7.28.4
-  resolution: "@babel/runtime@npm:7.28.4"
-  checksum: 10c0/792ce7af9750fb9b93879cc9d1db175701c4689da890e6ced242ea0207c9da411ccf16dc04e689cc01158b28d7898c40d75598f4559109f761c12ce01e959bf7
+"@babel/runtime@npm:^7.28.6":
+  version: 7.28.6
+  resolution: "@babel/runtime@npm:7.28.6"
+  checksum: 10c0/358cf2429992ac1c466df1a21c1601d595c46930a13c1d4662fde908d44ee78ec3c183aaff513ecb01ef8c55c3624afe0309eeeb34715672dbfadb7feedb2c0d
   languageName: node
   linkType: hard
 
@@ -1781,17 +1788,17 @@ __metadata:
   linkType: hard
 
 "@dr.pogodin/csurf@npm:^1.12.0":
-  version: 1.16.7
-  resolution: "@dr.pogodin/csurf@npm:1.16.7"
+  version: 1.16.8
+  resolution: "@dr.pogodin/csurf@npm:1.16.8"
   dependencies:
-    "@babel/runtime": "npm:^7.28.4"
+    "@babel/runtime": "npm:^7.28.6"
     cookie: "npm:^1.1.1"
     cookie-signature: "npm:^1.2.2"
     http-errors: "npm:^2.0.1"
     rndm: "npm:1.2.0"
     tsscmp: "npm:1.0.6"
     uid-safe: "npm:2.1.5"
-  checksum: 10c0/f528ef70fdf56da684ac2135b090585430337f7f0659ff45fb8cd0cedbaa90fbd3c8d9e0d8e51e36125b4dcae51b4495d43db5f997e2826147ead07da79d4c02
+  checksum: 10c0/3151a45dc2703dc0d612edb31115ca03c30c1c46570034ebb04e5e1b4a36009267e9f082f8424e7834ea39b1887acd1195e155aa67de3f5c7ab01f913caf4d68
   languageName: node
   linkType: hard
 
@@ -1855,7 +1862,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/config-array@npm:^0.21.0":
+"@eslint/config-array@npm:^0.21.1":
   version: 0.21.1
   resolution: "@eslint/config-array@npm:0.21.1"
   dependencies:
@@ -1866,21 +1873,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/config-helpers@npm:^0.4.0":
+"@eslint/config-helpers@npm:^0.4.2":
   version: 0.4.2
   resolution: "@eslint/config-helpers@npm:0.4.2"
   dependencies:
     "@eslint/core": "npm:^0.17.0"
   checksum: 10c0/92efd7a527b2d17eb1a148409d71d80f9ac160b565ac73ee092252e8bf08ecd08670699f46b306b94f13d22e88ac88a612120e7847570dd7cdc72f234d50dcb4
-  languageName: node
-  linkType: hard
-
-"@eslint/core@npm:^0.16.0":
-  version: 0.16.0
-  resolution: "@eslint/core@npm:0.16.0"
-  dependencies:
-    "@types/json-schema": "npm:^7.0.15"
-  checksum: 10c0/f27496a244ccfdca3e0fbc3331f9da3f603bdf1aa431af0045a3205826789a54493bc619ad6311a9090eaf7bc25798ff4e265dea1eccd2df9ce3b454f7e7da27
   languageName: node
   linkType: hard
 
@@ -1919,14 +1917,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.37.0":
-  version: 9.37.0
-  resolution: "@eslint/js@npm:9.37.0"
-  checksum: 10c0/84f98a6213522fc76ea104bd910f606136200bd918544e056a7a22442d3f9d5c3c5cd7f4cdf2499d49b1fa140155b87d597a1f16d01644920f05c228e9ca0378
-  languageName: node
-  linkType: hard
-
-"@eslint/js@npm:^9.29.0":
+"@eslint/js@npm:9.39.2, @eslint/js@npm:^9.29.0":
   version: 9.39.2
   resolution: "@eslint/js@npm:9.39.2"
   checksum: 10c0/00f51c52b04ac79faebfaa65a9652b2093b9c924e945479f1f3945473f78aee83cbc76c8d70bbffbf06f7024626575b16d97b66eab16182e1d0d39daff2f26f5
@@ -3880,20 +3871,20 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>=13.7.0":
-  version: 25.0.6
-  resolution: "@types/node@npm:25.0.6"
+  version: 25.1.0
+  resolution: "@types/node@npm:25.1.0"
   dependencies:
     undici-types: "npm:~7.16.0"
-  checksum: 10c0/4ee3b6b606bc28f6840c04d58769e1e75dd8085149908956c874c85f8f8c890990701bcbe783fc2d14017817861dc07fcf23de6fc2805fe491f84eae717b5705
+  checksum: 10c0/5f393a127dc9565e2e152514a271455d580c7095afc51302e73ffe8aac3526b64ebacc3c10dd40c93cef81a95436ef2c6a8b522930df567a3f6b189c0eef649a
   languageName: node
   linkType: hard
 
 "@types/node@npm:^20.0.0":
-  version: 20.19.28
-  resolution: "@types/node@npm:20.19.28"
+  version: 20.19.30
+  resolution: "@types/node@npm:20.19.30"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/aaa2de8570bfafdb9c160c1dbe3ecd7d9b2ccdc496ab6b0f24ccd5023aabe6f8c7fd02d7090185c2912052174f7cffef4ace80edd7d2a433200429c7a0a4869d
+  checksum: 10c0/23dbea652727d947ea35fc1c4e8acb7e1c535e85f6c139c3a4697864a5af164655ce305ab0877ea4cca537deee0405bf56aeac714f236ae1a3dd0fa6b87cc860
   languageName: node
   linkType: hard
 
@@ -4804,15 +4795,15 @@ __metadata:
   linkType: hard
 
 "applicationinsights@npm:^3.12.0":
-  version: 3.12.1
-  resolution: "applicationinsights@npm:3.12.1"
+  version: 3.13.0
+  resolution: "applicationinsights@npm:3.13.0"
   dependencies:
     "@azure/core-auth": "npm:^1.9.0"
     "@azure/functions": "npm:^4.6.0"
     "@azure/functions-old": "npm:@azure/functions@3.5.1"
     "@azure/identity": "npm:^4.6.0"
-    "@azure/monitor-opentelemetry": "npm:^1.14.2"
-    "@azure/monitor-opentelemetry-exporter": "npm:^1.0.0-beta.36"
+    "@azure/monitor-opentelemetry": "npm:^1.15.1"
+    "@azure/monitor-opentelemetry-exporter": "npm:^1.0.0-beta.38"
     "@azure/opentelemetry-instrumentation-azure-sdk": "npm:^1.0.0-beta.7"
     "@opentelemetry/api": "npm:^1.9.0"
     "@opentelemetry/api-logs": "npm:^0.208.0"
@@ -4830,7 +4821,7 @@ __metadata:
     "@opentelemetry/semantic-conventions": "npm:^1.38.0"
     diagnostic-channel: "npm:1.1.1"
     diagnostic-channel-publishers: "npm:1.0.8"
-  checksum: 10c0/46ee50fdb0172b814a61a89106756fd6aa76c430ce1cfae80c6bbf575888e72176b768c9a3e7b8519ece32dc3451e8f7cf86833dc607c03fd01f9fe1a4a0657a
+  checksum: 10c0/897fcb1974ecbdcfdc357a67a2e86a2b3e7f6831fc8ebe75c13aa78ebc7285cc79d1cb559481cceb3425df74a3e745425bfe37dd132cbe4369550bdc8608b45b
   languageName: node
   linkType: hard
 
@@ -5592,12 +5583,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"config@npm:4.1.1":
-  version: 4.1.1
-  resolution: "config@npm:4.1.1"
+"config@npm:4.2.0":
+  version: 4.2.0
+  resolution: "config@npm:4.2.0"
   dependencies:
     json5: "npm:^2.2.3"
-  checksum: 10c0/661c0c1b6a7ace9d1a8cae29fa95f329c76cd05c22a1dac7834c1fb4ce2d6c62b1fb9900d06a808cdfeb2ce16b325a0c7a5ea15ac7c58ae5b1c1feb434fedf0b
+  checksum: 10c0/a0f81ee93a3b7fe26870b6b53eefb17302224477f5b3a12d990f9dcaaa50ec5881a23daaed13c0a77319dadda02cb679b6988087939c58cdbb36527745d6d4af
   languageName: node
   linkType: hard
 
@@ -5918,7 +5909,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"diff@npm:^8.0.3":
+"diff@npm:8.0.3":
   version: 8.0.3
   resolution: "diff@npm:8.0.3"
   checksum: 10c0/d29321c70d3545fdcb56c5fdd76028c3f04c012462779e062303d4c3c531af80d2c360c26b871e6e2b9a971d2422d47e1779a859106c4cac4b5d2d143df70e20
@@ -6340,12 +6331,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:5.5.4":
-  version: 5.5.4
-  resolution: "eslint-plugin-prettier@npm:5.5.4"
+"eslint-plugin-prettier@npm:5.5.5":
+  version: 5.5.5
+  resolution: "eslint-plugin-prettier@npm:5.5.5"
   dependencies:
-    prettier-linter-helpers: "npm:^1.0.0"
-    synckit: "npm:^0.11.7"
+    prettier-linter-helpers: "npm:^1.0.1"
+    synckit: "npm:^0.11.12"
   peerDependencies:
     "@types/eslint": ">=8.0.0"
     eslint: ">=8.0.0"
@@ -6356,7 +6347,7 @@ __metadata:
       optional: true
     eslint-config-prettier:
       optional: true
-  checksum: 10c0/5cc780e0ab002f838ad8057409e86de4ff8281aa2704a50fa8511abff87028060c2e45741bc9cbcbd498712e8d189de8026e70aed9e20e50fe5ba534ee5a8442
+  checksum: 10c0/091449b28c77ab2efbbf674e977181f2c8453d95a4df68218bddd87a4dfaa9ecc4eda60164e416f5986fb5d577e66e8d8e1e23d81e8555f8d735375598b03257
   languageName: node
   linkType: hard
 
@@ -6401,23 +6392,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:9.37.0":
-  version: 9.37.0
-  resolution: "eslint@npm:9.37.0"
+"eslint@npm:9.39.2":
+  version: 9.39.2
+  resolution: "eslint@npm:9.39.2"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.8.0"
     "@eslint-community/regexpp": "npm:^4.12.1"
-    "@eslint/config-array": "npm:^0.21.0"
-    "@eslint/config-helpers": "npm:^0.4.0"
-    "@eslint/core": "npm:^0.16.0"
+    "@eslint/config-array": "npm:^0.21.1"
+    "@eslint/config-helpers": "npm:^0.4.2"
+    "@eslint/core": "npm:^0.17.0"
     "@eslint/eslintrc": "npm:^3.3.1"
-    "@eslint/js": "npm:9.37.0"
-    "@eslint/plugin-kit": "npm:^0.4.0"
+    "@eslint/js": "npm:9.39.2"
+    "@eslint/plugin-kit": "npm:^0.4.1"
     "@humanfs/node": "npm:^0.16.6"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
     "@humanwhocodes/retry": "npm:^0.4.2"
     "@types/estree": "npm:^1.0.6"
-    "@types/json-schema": "npm:^7.0.15"
     ajv: "npm:^6.12.4"
     chalk: "npm:^4.0.0"
     cross-spawn: "npm:^7.0.6"
@@ -6447,7 +6437,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10c0/30b71350b0e43542eeffa6f7380ed85c960055dde8003f17bf87d209a4a9afc6091bc0419aa32f86853e7ecef18790bdc4d678112b89dbebe61b69efcb1100e1
+  checksum: 10c0/bb88ca8fd16bb7e1ac3e13804c54d41c583214460c0faa7b3e7c574e69c5600c7122295500fb4b0c06067831111db740931e98da1340329527658e1cf80073d3
   languageName: node
   linkType: hard
 
@@ -8594,10 +8584,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:4.17.21, lodash@npm:^4.17.14, lodash@npm:^4.17.20, lodash@npm:^4.17.21":
-  version: 4.17.21
-  resolution: "lodash@npm:4.17.21"
-  checksum: 10c0/d8cbea072bb08655bb4c989da418994b073a608dffa608b09ac04b43a791b12aeae7cd7ad919aa4c925f33b48490b5cfe6c1f71d827956071dae2e7bb3a6b74c
+"lodash@npm:^4.17.23":
+  version: 4.17.23
+  resolution: "lodash@npm:4.17.23"
+  checksum: 10c0/1264a90469f5bb95d4739c43eb6277d15b6d9e186df4ac68c3620443160fc669e2f14c11e7d8b2ccf078b81d06147c01a8ccced9aab9f9f63d50dcf8cace6bf6
   languageName: node
   linkType: hard
 
@@ -9537,7 +9527,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-linter-helpers@npm:^1.0.0":
+"prettier-linter-helpers@npm:^1.0.1":
   version: 1.0.1
   resolution: "prettier-linter-helpers@npm:1.0.1"
   dependencies:
@@ -9547,11 +9537,11 @@ __metadata:
   linkType: hard
 
 "prettier@npm:^3.2.4":
-  version: 3.7.4
-  resolution: "prettier@npm:3.7.4"
+  version: 3.8.1
+  resolution: "prettier@npm:3.8.1"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/9675d2cd08eacb1faf1d1a2dbfe24bfab6a912b059fc9defdb380a408893d88213e794a40a2700bd29b140eb3172e0b07c852853f6e22f16f3374659a1a13389
+  checksum: 10c0/33169b594009e48f570471271be7eac7cdcf88a209eed39ac3b8d6d78984039bfa9132f82b7e6ba3b06711f3bfe0222a62a1bfb87c43f50c25a83df1b78a2c42
   languageName: node
   linkType: hard
 
@@ -10611,12 +10601,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"synckit@npm:^0.11.7":
-  version: 0.11.11
-  resolution: "synckit@npm:0.11.11"
+"synckit@npm:^0.11.12":
+  version: 0.11.12
+  resolution: "synckit@npm:0.11.12"
   dependencies:
     "@pkgr/core": "npm:^0.2.9"
-  checksum: 10c0/f0761495953d12d94a86edf6326b3a565496c72f9b94c02549b6961fb4d999f4ca316ce6b3eb8ed2e4bfc5056a8de65cda0bd03a233333a35221cd2fdc0e196b
+  checksum: 10c0/cc4d446806688ae0d728ae7bb3f53176d065cf9536647fb85bdd721dcefbd7bf94874df6799ff61580f2b03a392659219b778a9254ad499f9a1f56c34787c235
   languageName: node
   linkType: hard
 
@@ -10653,16 +10643,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tar@npm:^7.5.2":
-  version: 7.5.6
-  resolution: "tar@npm:7.5.6"
+"tar@npm:7.5.7":
+  version: 7.5.7
+  resolution: "tar@npm:7.5.7"
   dependencies:
     "@isaacs/fs-minipass": "npm:^4.0.0"
     chownr: "npm:^3.0.0"
     minipass: "npm:^7.1.2"
     minizlib: "npm:^3.1.0"
     yallist: "npm:^5.0.0"
-  checksum: 10c0/08af3807035957650ad5f2a300c49ca4fe0566ac0ea5a23741a5b5103c6da42891a9eeaed39bc1fbcf21c5cac4dc846828a004727fb08b9d946322d3144d1fd2
+  checksum: 10c0/51f261afc437e1112c3e7919478d6176ea83f7f7727864d8c2cce10f0b03a631d1911644a567348c3063c45abdae39718ba97abb073d22aa3538b9a53ae1e31c
   languageName: node
   linkType: hard
 
@@ -11442,15 +11432,15 @@ __metadata:
     chai: "npm:^6.1.0"
     chai-as-promised: "npm:^8.0.0"
     chalk: "npm:^4.1.2"
-    config: "npm:4.1.1"
+    config: "npm:4.2.0"
     cookie-parser: "npm:^1.4.5"
     debug: "npm:^4.1.1"
-    eslint: "npm:9.37.0"
+    eslint: "npm:9.39.2"
     eslint-config-prettier: "npm:^10.1.5"
     eslint-import-resolver-typescript: "npm:^4.4.3"
     eslint-plugin-import: "npm:^2.32.0"
     eslint-plugin-jest: "npm:^29.0.1"
-    eslint-plugin-prettier: "npm:5.5.4"
+    eslint-plugin-prettier: "npm:5.5.5"
     express: "npm:^4.22.1"
     glob: "npm:^12.0.0"
     globals: "npm:^16.2.0"
@@ -11458,7 +11448,7 @@ __metadata:
     ip-address: "npm:^10.0.0"
     jest: "npm:^29.7.0"
     jquery: "npm:^3.5.1"
-    lodash: "npm:^4.17.20"
+    lodash: "npm:^4.17.23"
     msw: "npm:^2.10.2"
     nock: "npm:^14.0.0"
     nodemon: "npm:^3.1.0"
