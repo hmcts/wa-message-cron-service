@@ -10,9 +10,6 @@ beforeAll(() => {
           wa: {
             's2s-secret-case-event-handler': process.env.S2S_SECRET_CASE_EVENT_HANDLER,
           },
-        },
-        job: {
-          'name': 'FIND_PROBLEM_MESSAGES'
         }
       };
 
@@ -26,8 +23,6 @@ beforeAll(() => {
       },
     });
 });
-
-console.log('lars process env', process.env);
 
 afterAll(() => {
   // Clean up the server process
