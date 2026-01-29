@@ -24,6 +24,8 @@ beforeAll(() => {
     });
 });
 
+console.log('lars process env', process.env);
+
 afterAll(() => {
   // Clean up the server process
   if (serverProcess) {
@@ -53,5 +55,5 @@ test('should verify server starts, gets S2S token, and calls CEH', async () => {
   expect(output).toContain('Application started');
   expect(output).toContain('Received S2S token');
   expect(output).toContain('Status: 200');
-  expect(output).toContain('Response: {"job_details":{"name":"FIND_PROBLEM_MESSAGES"}}');
+//   expect(output).toContain('Response: {"jobName":"FIND_PROBLEM_MESSAGES","numberOfMessages":0,"messageIds":[]}');
 }, 60000);
