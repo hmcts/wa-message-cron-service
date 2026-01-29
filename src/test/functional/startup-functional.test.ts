@@ -14,10 +14,14 @@ beforeAll(() => {
       };
 
   serverProcess = spawn('yarn', ['start'], {
-    shell: true,
-    stdio: 'pipe',
-    env: { ...process.env, ALLOW_CONFIG_MUTATIONS: true.toString() },
-  });
+      shell: true,
+      stdio: 'pipe',
+      env: {
+        ...process.env,
+        ALLOW_CONFIG_MUTATIONS: 'true',
+        NODE_CONFIG: JSON.stringify(nodeConfig),
+      },
+    });
 });
 
 afterAll(() => {
