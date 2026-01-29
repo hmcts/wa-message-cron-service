@@ -5,27 +5,26 @@ beforeAll(() => {
   console.log('Starting the server process', process.env.NODE_ENV);
 
   const nodeConfig = {
-        s2s: { secret: process.env.S2S_SECRET_CASE_EVENT_HANDLER },
-        secrets: {
-          wa: {
-            's2s-secret-case-event-handler': process.env.S2S_SECRET_CASE_EVENT_HANDLER,
-          },
-        },
-        },
-        job: {
-          'name': 'FIND_PROBLEM_MESSAGES'
-        }
-      };
+    s2s: { secret: process.env.S2S_SECRET_CASE_EVENT_HANDLER },
+    secrets: {
+      wa: {
+        's2s-secret-case-event-handler': process.env.S2S_SECRET_CASE_EVENT_HANDLER,
+      },
+    },
+    job: {
+      name: 'FIND_PROBLEM_MESSAGES',
+    },
+  };
 
   serverProcess = spawn('yarn', ['start'], {
-      shell: true,
-      stdio: 'pipe',
-      env: {
-        ...process.env,
-        ALLOW_CONFIG_MUTATIONS: 'true',
-        NODE_CONFIG: JSON.stringify(nodeConfig),
-      },
-    });
+    shell: true,
+    stdio: 'pipe',
+    env: {
+      ...process.env,
+      ALLOW_CONFIG_MUTATIONS: 'true',
+      NODE_CONFIG: JSON.stringify(nodeConfig),
+    },
+  });
 });
 
 afterAll(() => {
@@ -57,5 +56,5 @@ test('should verify server starts, gets S2S token, and calls CEH', async () => {
   expect(output).toContain('Application started');
   expect(output).toContain('Received S2S token');
   expect(output).toContain('Status: 200');
-//   expect(output).toContain('Response: {"jobName":"FIND_PROBLEM_MESSAGES","numberOfMessages":0,"messageIds":[]}');
+  //   expect(output).toContain('Response: {"jobName":"FIND_PROBLEM_MESSAGES","numberOfMessages":0,"messageIds":[]}');
 }, 60000);
