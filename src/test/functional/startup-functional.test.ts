@@ -4,6 +4,15 @@ let serverProcess: ChildProcess;
 beforeAll(() => {
   console.log('Starting the server process', process.env.NODE_ENV);
 
+  const nodeConfig = {
+        s2s: { secret: process.env.S2S_SECRET_CASE_EVENT_HANDLER },
+        secrets: {
+          wa: {
+            's2s-secret-case-event-handler': process.env.S2S_SECRET_CASE_EVENT_HANDLER,
+          },
+        },
+      };
+
   serverProcess = spawn('yarn', ['start'], {
     shell: true,
     stdio: 'pipe',
@@ -18,7 +27,7 @@ afterAll(() => {
   }
 });
 
-test('should verify server starts, gets S2S token, and calls case event handler', async () => {
+test('should verify server starts, gets S2S token, and calls CEH', async () => {
   let output = '';
 
   if (serverProcess.stdout) {
