@@ -22,13 +22,6 @@ static LinkedHashMap<String, Object> secret(String secretName, String envVar) {
 def pipelineConf = new AppPipelineConfig()
 pipelineConf.vaultSecrets = secrets
 
-onPR {
-  env.S2S_URL = "http://rpe-service-auth-provider-aat.service.core-compute-aat.internal"
-  env.WA_CASE_EVENT_HANDLER_SERVICE_URL = "http://wa-case-event-handler-aat.service.core-compute-aat.internal"
-  env.S2S_MICROSERVICE_NAME_CASE_EVENT_HANDLER = "wa_case_event_handler"
-  env.JOB_NAME = "FIND_PROBLEM_MESSAGES"
-}
-
 def type = "nodejs"
 def product = "wa"
 def component = "message-cron-service"
@@ -36,6 +29,12 @@ def component = "message-cron-service"
 def yarnBuilder = new uk.gov.hmcts.contino.YarnBuilder(this)
 
 withPipeline(type, product, component) {
+
+  env.S2S_URL = "http://rpe-service-auth-provider-aat.service.core-compute-aat.internal"
+  env.WA_CASE_EVENT_HANDLER_SERVICE_URL = "http://wa-case-event-handler-aat.service.core-compute-aat.internal"
+  env.S2S_MICROSERVICE_NAME_CASE_EVENT_HANDLER = "wa_case_event_handler"
+  env.JOB_NAME = "FIND_PROBLEM_MESSAGES"
+
   disableLegacyDeployment()
   nonServiceApp()
   loadVaultSecrets(secrets)
