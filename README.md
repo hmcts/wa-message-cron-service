@@ -142,7 +142,7 @@ export S2S_URL="http://rpe-service-auth-provider-aat.service.core-compute-aat.in
 export WA_CASE_EVENT_HANDLER_SERVICE_URL="http://wa-case-event-handler-aat.service.core-compute-aat.internal"
 export S2S_MICROSERVICE_NAME_CASE_EVENT_HANDLER="wa_case_event_handler"
 ```
-You also have to set the s2s secret which can be found in [wa-aat](https://portal.azure.com/?l=en.en-us#@HMCTS.NET/resource/subscriptions/1c4f0704-a29e-403d-b719-b90c34ef14c9/resourceGroups/wa-aat/providers/Microsoft.KeyVault/vaults/wa-aat/secrets) under s2s-secret-case-event-handler.
+You also have to set the s2s secret which can be found in [wa-aat](https://portal.azure.com/?l=en.en-us#@HMCTS.NET/asset/Microsoft_Azure_KeyVault/Secret/https://wa-aat.vault.azure.net/secrets/s2s-secret-case-event-handler) under s2s-secret-case-event-handler.
 ```bash
 export S2S_SECRET_CASE_EVENT_HANDLER="XXXXXX"
 ```
