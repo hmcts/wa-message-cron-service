@@ -2,6 +2,26 @@
 
 @Library("Infrastructure")
 
+import uk.gov.hmcts.contino.AppPipelineConfig
+
+def secrets = [
+  'wa-${env}': [
+    secret('s2s-secret-case-event-handler', 'S2S_SECRET_CASE_EVENT_HANDLER')
+  ]
+]
+
+static LinkedHashMap<String, Object> secret(String secretName, String envVar) {
+  [$class     : 'AzureKeyVaultSecret',
+   secretType : 'Secret',
+   name       : secretName,
+   version    : '',
+   envVariable: envVar
+  ]
+}
+
+def pipelineConf = new AppPipelineConfig()
+pipelineConf.vaultSecrets = secrets
+
 def type = "nodejs"
 def product = "wa"
 def component = "message-cron-service"
@@ -9,13 +29,29 @@ def component = "message-cron-service"
 def yarnBuilder = new uk.gov.hmcts.contino.YarnBuilder(this)
 
 withPipeline(type, product, component) {
+
+  env.S2S_URL = "http://rpe-service-auth-provider-aat.service.core-compute-aat.internal"
+  env.WA_CASE_EVENT_HANDLER_SERVICE_URL = "http://wa-case-event-handler-aat.service.core-compute-aat.internal"
+  env.S2S_MICROSERVICE_NAME_CASE_EVENT_HANDLER = "wa_case_event_handler"
+  env.JOB_NAME = "FIND_PROBLEM_MESSAGES"
+
   disableLegacyDeployment()
   nonServiceApp()
+  loadVaultSecrets(secrets)
 
   afterSuccess('build') {
+    setupSecretsForFunctionalTests(pipelineConf)
     yarnBuilder.yarn('build')
-    sh "yarn test:smoke"
-    echo "Smoke test complete"
+    yarnBuilder.yarn('test:smoke')
+    yarnBuilder.yarn('test:functional')
+    yarnBuilder.yarn('test:dependencies')
   }
+}
 
+def setupSecretsForFunctionalTests(pipelineConf) {
+  withSubscription('nonprod') {
+    withTeamSecrets(pipelineConf, 'aat') {
+      env.S2S_SECRET_CASE_EVENT_HANDLER = "${S2S_SECRET_CASE_EVENT_HANDLER}"
+    }
+  }
 }

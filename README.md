@@ -133,6 +133,25 @@ Here's how to run functional tests (the template contains just one sample test):
 $ yarn test:routes
 ```
 
+### Functional tests
+To run the functional tests you must export the following variables to you local environment. You must also be connected to f5 VPN for the tests to run.
+```bash
+export ALLOW_CONFIG_MUTATIONS=true
+export JOB_NAME=FIND_PROBLEM_MESSAGES
+export S2S_URL=<service auth aat url>
+export WA_CASE_EVENT_HANDLER_SERVICE_URL=<wa case event handler aat url>
+export S2S_MICROSERVICE_NAME_CASE_EVENT_HANDLER="wa_case_event_handler"
+```
+You also have to set the s2s secret which can be found in [wa-aat](https://portal.azure.com/?l=en.en-us#@HMCTS.NET/asset/Microsoft_Azure_KeyVault/Secret/https://wa-aat.vault.azure.net/secrets/s2s-secret-case-event-handler) under s2s-secret-case-event-handler.
+```bash
+export S2S_SECRET_CASE_EVENT_HANDLER="XXXXXX"
+```
+
+Then run the functional tests using the command below:
+```bash
+yarn test:functional
+```
+
 Running accessibility tests:
 
 ```bash

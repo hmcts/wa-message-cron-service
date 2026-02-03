@@ -19,7 +19,8 @@
     "fortifyScan": "./test/java/gradlew -p test/java fortifyScan",
     "test:a11y": "echo 'Not needed' && exit 0",
     "test:smoke": "yarn install && jest --config=jest.smoke.config.js && exit 0",
-    "test:functional": "echo 'TODO add functional tests' && exit 1",
+    "test:functional": "yarn install && jest --config=jest.functional.config.js && exit 0",
+    "test:dependencies": "yarn workspaces focus --all --production && node ./node_modules/.bin/tsc --noEmit --project tsconfig.runtime.json && yarn install",
     "cichecks": "yarn && yarn build && yarn lint && yarn test && yarn test:routes",
     "audit": "yarn npm audit"
   },
@@ -123,7 +124,7 @@
     "@eslint/plugin-kit": "0.6.0",
     "path-to-regexp": "0.1.12",
     "brace-expansion": "4.0.1",
-    "undici": "5.29.0",
+    "undici": "7.18.2",
     "@typescript-eslint/typescript-estree": "^8.34.1",
     "superagent": "^10.2.2",
     "form-data": "^4.0.4",
