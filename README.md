@@ -138,8 +138,8 @@ To run the functional tests you must export the following variables to you local
 ```bash
 export ALLOW_CONFIG_MUTATIONS=true
 export JOB_NAME=FIND_PROBLEM_MESSAGES
-export S2S_URL="http://rpe-service-auth-provider-aat.service.core-compute-aat.internal"
-export WA_CASE_EVENT_HANDLER_SERVICE_URL="http://wa-case-event-handler-aat.service.core-compute-aat.internal"
+export S2S_URL=<service auth aat url>
+export WA_CASE_EVENT_HANDLER_SERVICE_URL=<wa case event handler aat url>
 export S2S_MICROSERVICE_NAME_CASE_EVENT_HANDLER="wa_case_event_handler"
 ```
 You also have to set the s2s secret which can be found in [wa-aat](https://portal.azure.com/?l=en.en-us#@HMCTS.NET/asset/Microsoft_Azure_KeyVault/Secret/https://wa-aat.vault.azure.net/secrets/s2s-secret-case-event-handler) under s2s-secret-case-event-handler.
