@@ -1,5 +1,3 @@
-import * as os from 'os';
-
 import { infoRequestHandler } from '@hmcts/info-provider';
 import { Router } from 'express';
 
@@ -8,9 +6,7 @@ export default function (app: Router): void {
     '/info',
     infoRequestHandler({
       extraBuildInfo: {
-        host: os.hostname(),
-        name: 'expressjs-template',
-        uptime: process.uptime(),
+        name: 'expressjs-template'
       },
       info: {
         // TODO: add downstream info endpoints if your app has any
