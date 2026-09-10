@@ -102,6 +102,7 @@
     "yarn-audit-fix": "^10.0.0"
   },
   "resolutions": {
+    "@humanfs/node": "0.16.8",
     "semver": "^7.5.3",
     "tough-cookie": "^5.0.0",
     "word-wrap": "^1.2.4",
@@ -124,7 +125,6 @@
     "@eslint/plugin-kit": "0.7.2",
     "path-to-regexp": "^0.1.13",
     "brace-expansion": "5.0.9",
-    "undici": "7.26.0",
     "@typescript-eslint/typescript-estree": "^8.34.1",
     "superagent": "^10.2.2",
     "form-data": "^4.0.6",
@@ -137,7 +137,6 @@
     "lodash-es": "^4.18.1",
     "fast-uri": "3.1.6",
     "socks": "2.8.9",
-    "@isaacs/brace-expansion": "^5.0.1",
     "minimatch": "^10.2.3",
     "flatted": "^3.4.2",
     "protobufjs": "^8.6.6",
@@ -145,7 +144,9 @@
     "@opentelemetry/sdk-node": "^0.218.0",
     "@opentelemetry/exporter-prometheus": "^0.218.0",
     "@opentelemetry/core": "^2.8.0",
-    "@opentelemetry/propagator-jaeger": "2.9.0"
+    "@opentelemetry/propagator-jaeger": "2.9.0",
+    "baseline-browser-mapping": "2.11.0",
+    "browserslist": "4.28.7"
   },
   "packageManager": "yarn@4.12.0"
 }
