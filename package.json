@@ -102,7 +102,7 @@
     "yarn-audit-fix": "^10.0.0"
   },
   "resolutions": {
-    "@humanfs/node": "0.16.8",
+    "@humanfs/node": "0.17.0",
     "baseline-browser-mapping": "2.11.27",
     "browserslist": "4.28.7",
     "semver": "^7.5.3",
