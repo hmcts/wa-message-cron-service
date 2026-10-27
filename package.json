@@ -104,7 +104,7 @@
   "resolutions": {
     "@humanfs/node": "0.17.0",
     "baseline-browser-mapping": "2.11.33",
-    "browserslist": "4.29.4",
+    "browserslist": "4.29.5",
     "semver": "^7.5.3",
     "tough-cookie": "^5.0.0",
     "word-wrap": "^1.2.4",
