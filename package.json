@@ -14,7 +14,7 @@
     "build:prod": "NODE_ENV=production yarn webpack --mode production --config webpack.config.js",
     "test": "NODE_ENV=test jest",
     "test:coverage": "NODE_ENV=test jest --coverage",
-    "test:routes": "jest -c xjest.routes.config.js",
+    "test:routes": "ALLOW_CONFIG_MUTATIONS=true jest -c jest.routes.config.js",
     "sonar-scan": "sonar-scanner",
     "fortifyScan": "./test/java/gradlew -p test/java fortifyScan",
     "test:a11y": "echo 'Not needed' && exit 0",
@@ -45,7 +45,7 @@
     "config": "4.3.0",
     "cookie-parser": "^1.4.5",
     "express": "^4.22.1",
-    "glob": "^12.0.0",
+    "glob": "^14.0.3",
     "globals": "^16.2.0",
     "helmet": "^8.0.0",
     "ip-address": "^10.4.0",
@@ -87,7 +87,7 @@
     "nock": "^14.0.0",
     "nodemon": "^3.1.0",
     "prettier": "^3.2.4",
-    "sinon": "^19.0.0",
+    "sinon": "^22.1.0",
     "sinon-chai": "^4.0.0",
     "sonar-scanner": "^3.1.0",
     "style-loader": "^4.0.0",
@@ -99,11 +99,15 @@
     "webpack-cli": "^5.0.0",
     "webpack-dev-middleware": "^7.0.0",
     "webpack-node-externals": "^3.0.0",
-    "yarn-audit-fix": "^10.0.0"
+    "yarn-audit-fix": "^11.1.0"
   },
   "resolutions": {
     "@opentelemetry/core": "2.12.0",
-    "lodash": "4.18.1"
+    "minimatch@npm:^9.0.4": "11.0.3",
+    "minimatch@npm:^9.0.5": "11.0.3",
+    "minimatch@npm:^10.2.1": "11.0.3",
+    "glob@npm:^13.0.0": "14.0.3",
+    "minimatch@npm:^11.0.2": "11.0.3"
   },
   "packageManager": "yarn@4.12.0"
 }
