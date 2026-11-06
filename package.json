@@ -106,7 +106,7 @@
     "minimatch@npm:^9.0.4": "11.0.4",
     "minimatch@npm:^9.0.5": "11.0.4",
     "minimatch@npm:^10.2.1": "11.0.4",
-    "glob@npm:^13.0.0": "14.0.3",
+    "glob@npm:^13.0.0": "14.0.4",
     "minimatch@npm:^11.0.2": "11.0.4",
     "@opentelemetry/sdk-node": "^0.218.0",
     "@opentelemetry/exporter-prometheus": "^0.218.0",
