@@ -102,7 +102,7 @@
     "yarn-audit-fix": "^11.1.0"
   },
   "resolutions": {
-    "@opentelemetry/core": "2.9.0",
+    "@opentelemetry/core": "2.11.0",
     "minimatch@npm:^9.0.4": "11.0.4",
     "minimatch@npm:^9.0.5": "11.0.4",
     "minimatch@npm:^10.2.1": "11.0.4",
@@ -112,7 +112,8 @@
     "@opentelemetry/exporter-prometheus": "^0.218.0",
     "@opentelemetry/propagator-jaeger": "2.9.0",
     "@opentelemetry/instrumentation-mysql": "0.67.0",
-    "@opentelemetry/instrumentation-pg": "0.73.0"
+    "@opentelemetry/instrumentation-pg": "0.73.0",
+    "@opentelemetry/instrumentation-http": "0.222.0"
   },
   "packageManager": "yarn@4.12.0"
 }
